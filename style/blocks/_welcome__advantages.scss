@@ -1,0 +1,48 @@
+.welcome__advantages {
+    
+}
+
+.welcome__advantages-list {
+  display: flex;
+  align-items: center;
+ 
+}
+.welcome__advantages-item {
+  display: flex;
+  /* align-items: center; */
+  max-width: 135px;
+  margin-right: 33px;
+  &:first-child {
+margin-right: 46px;
+  }
+  &:last-child {
+    margin-right: 0;
+      }
+}
+
+.welcome__advantages-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.welcome__advantages-leaf {
+  width: 44px;
+  height: 41px;
+  fill: #c6f7ff;
+  margin-right: 10px;
+}
+
+.welcome__advantages-car {
+  width: 50px;
+  height: 40px;
+  fill: #c6f7ff;
+  margin-right: 16px;
+}
+.welcome__advantages-meter {
+  width: 42px;
+  height: 42px;
+  fill: #c6f7ff;
+  margin-right: 11px;
+}

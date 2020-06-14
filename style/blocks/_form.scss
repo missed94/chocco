@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+ 
+}
+
+
+.form__item{
+  flex: 1;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

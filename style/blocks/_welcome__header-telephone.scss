@@ -1,0 +1,30 @@
+.welcome__header-telephone {
+  display: flex;
+  align-items: center;
+  &:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+.welcome__header-number-icon {
+  fill: #ffffff;
+  width: 12px;
+  height: 11px;
+  margin-right: 6px;
+  z-index: 10;
+
+
+}
+
+.welcome__header-number-wrapper {
+ 
+  cursor: pointer;
+  z-index: 10;
+}
+
+.welcome__header-telephone-number {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+}

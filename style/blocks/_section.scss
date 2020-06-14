@@ -1,0 +1,27 @@
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.section__title {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+
+
+
+
+.desc__background-maple {
+  position: absolute;
+  bottom:33px;
+  left:0;
+}

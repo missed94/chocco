@@ -1,0 +1,30 @@
+.delivery-section {
+  background: url(./../../backgrounds/delivery-bgc.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: url(./../../images/form_list.png);
+    right: 0;
+    bottom:81px;
+    position: absolute;
+  }
+
+  &:after {
+    content: url(./../../images/form_berry.png);
+    left: 20px;
+    bottom:83px;
+    position: absolute;
+
+  }
+}
+
+.delivery__title {
+color: #365a49;
+font-size: 48px;
+font-weight: 700;
+text-transform: uppercase;
+line-height: 1;
+margin-bottom: 54px;
+}
+
