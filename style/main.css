@@ -104,7 +104,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  min-width: 110rem;
+  /* min-width: 110rem; */
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -882,4 +882,27 @@ textarea {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  .welcome {
+    background: url(./../../images/uzor.png) right top no-repeat;
+    background-color: #86c3d7;
+  }
+
+  .welcome__menu, .welcome__advantages, .welcome__header-telephone {
+    display: none;
+  }
+
+  .welcome__hero {
+    width: 70%;
+    text-align: center;
+  }
+
+  .welcome__hero-desc {
+    margin-bottom: 3.1rem;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 3.1rem;
+  }
 }
