@@ -12,23 +12,24 @@
     }
   }
 
-  .welcome__menu,
+  
+
+  .hamburger {
+    display: block;
+  }
+
+
+   .menu.welcome__menu,
   .welcome__advantages,
-  .welcome__header-telephone {
+  .welcome__header-telephone
+  {
     display: none;
   }
 
-  .welcome__hero {
-    width: 70%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .welcome__hero-desc {
-    width: 50%;
-  }
+  
+
+
+
 }
 
 

@@ -1,0 +1,27 @@
+.hamburger { 
+  display: none;
+  position: relative;
+
+}
+
+
+.hamburger__img-wrapper {
+width: 24px;
+height: 22px;
+ }
+
+
+.hamburger-img {
+  width: 24px;
+height: 22px;
+fill:white;
+ }
+
+
+.hamburger__dropdown {
+  position: absolute; 
+
+}
+
+
+/* display: none; */
