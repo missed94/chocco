@@ -1,21 +1,21 @@
 .rewievs__main-title {
-margin-bottom: 33px;
-font-size: 48px;
+margin-bottom: 3.3rem;
+font-size: 4.8rem;
 
 }
 
 .rewievs__display{
   position: relative;
-  padding:50px 188px 37px 43px;
-  margin-bottom: 19px;
+  padding:5.0rem 18.8rem 3.7rem 4.3rem;
+  margin-bottom: 1.9rem;
   background: url(./../../images/rewievs_display-bg.png) #f8faf9 right top no-repeat;
   overflow: hidden;
 
   &:after{
     content:"";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: 9.0rem;
+    height: 9.0rem;
     border-radius: 50% ;
     background-color: white;
     position: absolute;
@@ -32,9 +32,9 @@ font-size: 48px;
 }
 
 .rewievs__avatar {
-  width: 254px;
-  height: 260px;
-  margin-right: 20px;
+  width: 25.4rem;
+  height: 26.0rem;
+  margin-right: 2.0rem;
 }
 
 .rewievs__avatar-img {
@@ -45,27 +45,27 @@ font-size: 48px;
 
 .rewievs__content{
 flex:1;
-padding-top: 17px;
+padding-top: 1.7rem;
 }
 
 .rewievs__title { 
 color: #000000;
-font-size: 30px;
+font-size: 3.0rem;
 font-weight: 700;
 line-height: 1;
-margin-bottom: 25px;
+margin-bottom: 2.5rem;
 }
 .rewiev__text { 
   color: #666666;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 23px;
-  margin-bottom: 26px;
+  line-height: 2.3rem;
+  margin-bottom: 2.6rem;
 }
 
 .rewiev-name {
   color: #000000;
-font-size: 18px;
+font-size: 1.8rem;
 font-weight: 500;
 line-height: 1;
 }

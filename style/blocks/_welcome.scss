@@ -1,6 +1,6 @@
 .welcome {
   height: 100vh;
-  min-height: 650px;
+  min-height: 65.0rem;
   background: url(./../../images/uzor.png) right bottom no-repeat;
   background-color: #86c3d7;
   position: relative;
@@ -9,13 +9,13 @@
   content:url(./../../images/welcome_berry-maple3.png);
   position: absolute;
   left:2.7%;
-  bottom:-54px;
+  bottom:-5.4rem;
 }
 
 &:after{
   content:url(./../../images/maples-berries.png);
   position: absolute;
-  bottom:-50px;
+  bottom:-5.0rem;
   right: 0;
 }
 }
@@ -25,7 +25,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 53px 0;
+  padding: 2.4rem 0 5.3rem 0;
   overflow: visible;
   background: url(./../../images/chokos.png) right center / 50% auto  no-repeat;
 
