@@ -208,12 +208,14 @@ textarea {
 }
 .welcome:before {
   content: url(./../../images/welcome_berry-maple3.png);
+  display: block;
   position: absolute;
   left: 2.7%;
   bottom: -5.4rem;
 }
 .welcome:after {
   content: url(./../../images/maples-berries.png);
+  display: block;
   position: absolute;
   bottom: -5.0rem;
   right: 0;
@@ -889,20 +891,38 @@ textarea {
     background: url(./../../images/uzor.png) right top no-repeat;
     background-color: #86c3d7;
   }
+  .welcome:before {
+    display: none;
+  }
+  .welcome:after {
+    display: none;
+  }
 
-  .welcome__menu, .welcome__advantages, .welcome__header-telephone {
+  .welcome__menu,
+  .welcome__advantages,
+  .welcome__header-telephone {
     display: none;
   }
 
   .welcome__hero {
     width: 70%;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .welcome__hero-desc {
-    margin-bottom: 3.1rem;
     width: 50%;
-    margin: auto;
-    margin-bottom: 3.1rem;
   }
 }
