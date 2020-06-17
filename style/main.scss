@@ -1,9 +1,30 @@
+
+
+
+
+@mixin middle{
+  @media screen and(min-width: 768px) and(max-width: 1099px) {
+    @content;
+  }
+}
+
+@mixin small{
+  @media screen /* and(min-width: 320px) */ and(max-width: 767px) {
+    @content;
+    }
+}
+
+
+
+
 @import "./layout/_normalize.scss";
 @import "./layout/_base.scss";
 @import "./layout/_fonts";
 @import "./blocks/_welcome";
 @import "./blocks/_welcome__header";
+@import "./blocks/_menu";
 @import "./blocks/_welcome__menu";
+@import "./blocks/telephone";
 @import "./blocks/_welcome__header-telephone";
 @import "./blocks/_welcome__hero";
 @import "./blocks/_btn";
@@ -23,8 +44,12 @@
 @import "./blocks/_radio";
 @import "./blocks/_delivery-section__btns.scss";
 @import "./blocks/_fixed-menu.scss";
-
 @import "./blocks/_hamburger";
-@import "./blocks/_menu";
+
 @import "./blocks/_hamburger-menu";
-@import "./media/_media.scss";
+@import "./blocks/_map-section";
+@import "./blocks/_footer";
+@import "./blocks/footer-telephone";
+@import "./blocks/socials";
+
+

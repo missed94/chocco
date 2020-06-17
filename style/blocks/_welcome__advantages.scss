@@ -1,5 +1,11 @@
 .welcome__advantages {
-    
+  @include middle {
+    display: none;
+  }
+
+  @include small {
+    display: none;
+  }
 }
 
 .welcome__advantages-list {
