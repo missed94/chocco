@@ -1,51 +1,43 @@
-
 .benefit {
   text-align: center;
 }
 
-
 .benefit__image-wrapper {
   display: inline-block;
-  width: 12.6rem;
-  height: 12.6rem;
+  width: rem(126px);
+  height: rem(126px);
   background-color: #f2f5f4;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  margin-bottom: 2.9rem; 
+  margin-bottom: rem(29px);
 }
 
 .benefit__icon {
-  width: 7.5rem;
-  height: 6.9rem;
+  width: rem(75px);
+  height: rem(69px);
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-
-
-
 
 .benefit__title {
-text-align: center;
-color: #000000;
-font-size: 2.7rem;
-font-weight: 700;
-line-height: 1;
-margin-bottom: 2.2rem;
+  text-align: center;
+  color: #000000;
+  font-size: rem(27px);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: rem(22px);
 }
-
-
 
 .benefit__desc {
   text-align: center;
 
-  p{
+  p {
     color: #666666;
     font-weight: 300;
-    line-height: 21px;
-    font-size:1.8rem;
+    line-height: rem(21px);
+    font-size: rem(18px);
   }
-
 }

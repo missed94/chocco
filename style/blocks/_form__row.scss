@@ -1,6 +1,6 @@
-.form__row{
+.form__row {
   display: flex;
-  margin-bottom: 2.4rem;
+  margin-bottom: rem(24px);
 
   &:last-child {
     margin-bottom: 0;
@@ -9,53 +9,47 @@
 
 .form__block {
   flex: 1;
-  margin-right: 2.0rem;
-  &:last-child{
+  margin-right: rem(20px);
+  &:last-child {
     margin-right: 0;
   }
 }
 
 .form__input {
-width: 100%;
-padding: 1.5rem 1.9rem 1.5rem 1.1rem;
-color: #000000;
-font-family: "Open Sans";
-font-size: 1.8rem;
-font-weight: 400;
-line-height: 1;
-border: 0.3rem solid transparent;
+  width: 100%;
+  padding: rem(15px) rem(19px) rem(15px) rem(11px);
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: rem(18px);
+  font-weight: 400;
+  line-height: 1;
+  border: rem(3px) solid transparent;
 
-&:focus {
-  border: 0.3rem solid #dee2bd;
-  outline: none;
- }
+  &:focus {
+    border: rem(3px) solid #dee2bd;
+    outline: none;
+  }
 }
 
-
-.form__input_textarea{
+.form__input_textarea {
   resize: none;
-  height: 18rem;
-  }
-
-
-
+  height: rem(180px);
+}
 
 .form__title {
-color: #365a49;
-font-family: "AlegreyaSans";
-font-size: 1.8rem;
-font-weight: 400;
-line-height: 1;
+  color: #365a49;
+  font-family: "AlegreyaSans";
+  font-size: rem(18px);
+  font-weight: 400;
+  line-height: 1;
 }
 
-.form__controls{
+.form__controls {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.6rem;
- 
 }
 
 .form__controls_checkbox {
-  margin-bottom:3.5rem;
+  margin-bottom: 3.5rem;
 }
-

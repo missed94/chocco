@@ -1,34 +1,21 @@
-.hamburger { 
+.hamburger {
   display: none;
   position: relative;
-
-  @include middle {
-    display: block;
-  }
-
-  @include small {
-    display: block;
-  }
 }
-
 
 .hamburger__img-wrapper {
-width: 24px;
-height: 22px;
- }
-
-
-.hamburger-img {
-  width: 24px;
-height: 22px;
-fill:white;
- }
-
-
-.hamburger__dropdown {
-  position: absolute; 
-
+  width: rem(24px);
+  height: rem(22px);
 }
 
+.hamburger-img {
+  width: rem(24px);
+  height: rem(22px);
+  fill: white;
+}
+
+.hamburger__dropdown {
+  position: absolute;
+}
 
 /* display: none; */

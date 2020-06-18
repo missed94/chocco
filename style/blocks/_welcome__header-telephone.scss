@@ -1,26 +1,21 @@
 .welcome__header-telephone {
-  
   &:hover {
-    text-shadow: 0 0 1.0rem rgba(0, 0, 0, 0.2);
-}
+    text-shadow: 0 0 rem(10px) rgba(0, 0, 0, 0.2);
+  }
 
-@include middle {
-  display: none;
-}
+  @include tablets {
+    display: none;
+  }
 
-@include small {
-  display: none;
-}
-
+  @include phones {
+    display: none;
+  }
 }
 
 .welcome__header-number-icon {
   fill: #ffffff;
 }
 
-
-
 .welcome__header-telephone-number {
   color: #ffffff;
-  
 }

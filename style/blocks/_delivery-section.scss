@@ -6,25 +6,23 @@
   &:before {
     content: url(./../images/form_list.png);
     right: 0;
-    bottom:8.1rem;
+    bottom: rem(81px);
     position: absolute;
   }
 
   &:after {
     content: url(./../images/form_berry.png);
-    left: 2rem;
-    bottom:8.3rem;
+    left: rem(20px);
+    bottom: rem(83px);
     position: absolute;
-
   }
 }
 
 .delivery__title {
-color: #365a49;
-font-size: 4.8rem;
-font-weight: 700;
-text-transform: uppercase;
-line-height: 1;
-margin-bottom: 5.4rem;
+  color: #365a49;
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: rem(54px);
 }
-
