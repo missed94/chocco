@@ -645,7 +645,7 @@ textarea {
 
 .rewievs__display {
   position: relative;
-  padding: 5.0rem 18.8rem 3.7rem 4.3rem;
+  padding: 5rem 18.8rem 3.7rem 4.3rem;
   margin-bottom: 1.9rem;
   background: url(./../images/rewievs_display-bg.png) #f8faf9 right top no-repeat;
   overflow: hidden;
@@ -653,8 +653,8 @@ textarea {
 .rewievs__display:after {
   content: "";
   display: block;
-  width: 9.0rem;
-  height: 9.0rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
   background-color: white;
   position: absolute;
@@ -672,8 +672,8 @@ textarea {
 
 .rewievs__avatar {
   width: 25.4rem;
-  height: 26.0rem;
-  margin-right: 2.0rem;
+  height: 26rem;
+  margin-right: 2rem;
 }
 
 .rewievs__avatar-img {
@@ -692,7 +692,7 @@ textarea {
 
 .rewievs__title {
   color: #000000;
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 2.5rem;

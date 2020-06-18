@@ -1,31 +1,29 @@
 .rewievs__main-title {
-margin-bottom: 3.3rem;
-font-size: 4.8rem;
-
+  margin-bottom: 3.3rem;
+  font-size: 4.8rem;
 }
 
-.rewievs__display{
+.rewievs__display {
   position: relative;
-  padding:5.0rem 18.8rem 3.7rem 4.3rem;
+  padding: 5rem 18.8rem 3.7rem 4.3rem;
   margin-bottom: 1.9rem;
-  background: url(./../images/rewievs_display-bg.png) #f8faf9 right top no-repeat;
+  background: url(./../images/rewievs_display-bg.png) #f8faf9 right top
+    no-repeat;
   overflow: hidden;
 
-  &:after{
-    content:"";
+  &:after {
+    content: "";
     display: block;
-    width: 9.0rem;
-    height: 9.0rem;
-    border-radius: 50% ;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
     background-color: white;
     position: absolute;
-    top:0;
+    top: 0;
     left: 50%;
-    transform: translate(-50%,-75%);
+    transform: translate(-50%, -75%);
   }
-
 }
-
 
 .rewievs__display-inner {
   display: flex;
@@ -33,8 +31,8 @@ font-size: 4.8rem;
 
 .rewievs__avatar {
   width: 25.4rem;
-  height: 26.0rem;
-  margin-right: 2.0rem;
+  height: 26rem;
+  margin-right: 2rem;
 }
 
 .rewievs__avatar-img {
@@ -43,19 +41,19 @@ font-size: 4.8rem;
   height: 100%;
 }
 
-.rewievs__content{
-flex:1;
-padding-top: 1.7rem;
+.rewievs__content {
+  flex: 1;
+  padding-top: 1.7rem;
 }
 
-.rewievs__title { 
-color: #000000;
-font-size: 3.0rem;
-font-weight: 700;
-line-height: 1;
-margin-bottom: 2.5rem;
+.rewievs__title {
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.5rem;
 }
-.rewiev__text { 
+.rewiev__text {
   color: #666666;
   font-size: 1.8rem;
   font-weight: 400;
@@ -65,7 +63,7 @@ margin-bottom: 2.5rem;
 
 .rewiev-name {
   color: #000000;
-font-size: 1.8rem;
-font-weight: 500;
-line-height: 1;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1;
 }
