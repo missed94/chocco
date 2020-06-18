@@ -548,7 +548,7 @@ textarea {
   position: relative;
 }
 .benefits__item:before {
-  content: url("./../../icons/delimiter.png");
+  content: url("./../icons/delimiter.png");
   position: absolute;
   right: 0;
   top: 5.2rem;
