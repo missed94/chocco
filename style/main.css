@@ -124,100 +124,100 @@ textarea {
 /*Шрифты*/
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-Black.ttf);
+  src: url(./../fonts/AlegreyaSans-Black.ttf);
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-Bold.ttf);
+  src: url(./../fonts/AlegreyaSans-Bold.ttf);
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-BoldItalic.ttf);
+  src: url(./../fonts/AlegreyaSans-BoldItalic.ttf);
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-ExtraBold.ttf);
+  src: url(./../fonts/AlegreyaSans-ExtraBold.ttf);
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-ExtraBoldItalic.ttf);
+  src: url(./../fonts/AlegreyaSans-ExtraBoldItalic.ttf);
   font-weight: 800;
   font-style: italic;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-Italic.ttf);
+  src: url(./../fonts/AlegreyaSans-Italic.ttf);
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-Light.ttf);
+  src: url(./../fonts/AlegreyaSans-Light.ttf);
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-LightItalic.ttf);
+  src: url(./../fonts/AlegreyaSans-LightItalic.ttf);
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-Medium.ttf);
+  src: url(./../fonts/AlegreyaSans-Medium.ttf);
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-MediumItalic.ttf);
+  src: url(./../fonts/AlegreyaSans-MediumItalic.ttf);
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-Regular.ttf);
+  src: url(./../fonts/AlegreyaSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-Thin.ttf);
+  src: url(./../fonts/AlegreyaSans-Thin.ttf);
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: AlegreyaSans;
-  src: url(./../../fonts/AlegreyaSans-ThinItalic.ttf);
+  src: url(./../fonts/AlegreyaSans-ThinItalic.ttf);
   font-weight: 100;
   font-style: italic;
 }
 .welcome {
   height: 100vh;
   min-height: 65.0rem;
-  background: url(./../../images/uzor.png) right bottom no-repeat #86c3d7;
+  background: url(./../images/uzor.png) right bottom no-repeat #86c3d7;
   position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 1099px) {
   .welcome {
-    background: url(./../../images/uzor.png) right top no-repeat #86c3d7;
+    background: url(./../images/uzor.png) right top no-repeat #86c3d7;
   }
 }
 @media screen and (max-width: 767px) {
   .welcome {
-    background: url(./../../images/welcome_list_small.png) right top/65% auto no-repeat #86c3d7;
+    background: url(./../images/welcome_list_small.png) right top/65% auto no-repeat #86c3d7;
   }
 }
 .welcome:before {
-  content: url(./../../images/welcome_berry-maple3.png);
+  content: url(./../images/welcome_berry-maple3.png);
   display: block;
   position: absolute;
   left: 2.7%;
@@ -234,7 +234,7 @@ textarea {
   }
 }
 .welcome:after {
-  content: url(./../../images/maples-berries.png);
+  content: url(./../images/maples-berries.png);
   display: block;
   position: absolute;
   bottom: -5.0rem;
@@ -264,7 +264,7 @@ textarea {
           justify-content: space-between;
   height: 100%;
   padding: 2.4rem 0 5.3rem 0;
-  background: url(./../../images/chokos.png) right/50% auto no-repeat;
+  background: url(./../images/chokos.png) right/50% auto no-repeat;
 }
 
 .welcome__header {
@@ -629,10 +629,10 @@ textarea {
 
 .benefit-section {
   position: relative;
-  background: url(./../../images/uzor_list.png) left top 57% no-repeat;
+  background: url(./../images/uzor_list.png) left top 57% no-repeat;
 }
 .benefit-section:before {
-  content: url(./../../images/choko_malina.png);
+  content: url(./../images/choko_malina.png);
   position: absolute;
   left: 0;
   bottom: -11.4rem;
@@ -647,7 +647,7 @@ textarea {
   position: relative;
   padding: 5.0rem 18.8rem 3.7rem 4.3rem;
   margin-bottom: 1.9rem;
-  background: url(./../../images/rewievs_display-bg.png) #f8faf9 right top no-repeat;
+  background: url(./../images/rewievs_display-bg.png) #f8faf9 right top no-repeat;
   overflow: hidden;
 }
 .rewievs__display:after {
@@ -755,32 +755,32 @@ textarea {
   /* background: url(./../../images/uzor_list.png) left top 57% no-repeat; */
 }
 .rewievs-section:before {
-  content: url(./../../images/rewievs__list-berries.png);
+  content: url(./../images/rewievs__list-berries.png);
   position: absolute;
   left: 0;
   bottom: -16rem;
   z-index: 2;
 }
 .rewievs-section:after {
-  content: url(./../../images/rewievs_stawberry.png);
+  content: url(./../images/rewievs_stawberry.png);
   position: absolute;
   top: 3.3%;
   right: 1.2%;
 }
 
 .delivery-section {
-  background: url(./../../backgrounds/delivery-bgc.jpg) no-repeat;
+  background: url(./../backgrounds/delivery-bgc.jpg) no-repeat;
   background-size: cover;
   position: relative;
 }
 .delivery-section:before {
-  content: url(./../../images/form_list.png);
+  content: url(./../images/form_list.png);
   right: 0;
   bottom: 8.1rem;
   position: absolute;
 }
 .delivery-section:after {
-  content: url(./../../images/form_berry.png);
+  content: url(./../images/form_berry.png);
   left: 2rem;
   bottom: 8.3rem;
   position: absolute;

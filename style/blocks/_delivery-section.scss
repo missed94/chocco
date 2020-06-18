@@ -1,17 +1,17 @@
 .delivery-section {
-  background: url(./../../backgrounds/delivery-bgc.jpg) no-repeat;
+  background: url(./../backgrounds/delivery-bgc.jpg) no-repeat;
   background-size: cover;
   position: relative;
 
   &:before {
-    content: url(./../../images/form_list.png);
+    content: url(./../images/form_list.png);
     right: 0;
     bottom:8.1rem;
     position: absolute;
   }
 
   &:after {
-    content: url(./../../images/form_berry.png);
+    content: url(./../images/form_berry.png);
     left: 2rem;
     bottom:8.3rem;
     position: absolute;
