@@ -893,7 +893,7 @@ textarea {
   border-radius: 0;
 }
 .radio__checkbox .radio__visible:before {
-  background: url(./../../icons/gala.png) center center no-repeat;
+  background: url(./../icons/gala.png) center center no-repeat;
 }
 
 .radio__title {
