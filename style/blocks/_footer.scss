@@ -1,21 +1,21 @@
-.footer { 
+.footer {
   position: absolute;
   background: white;
   width: 100%;
-  bottom:0;
+  bottom: 0;
 }
-.footer__contant-wrapper{
+.footer__contant-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 0 20px 0;
+  padding: rem(26px) 0 rem(20px) 0;
 }
 /* .addres-wrapper { } */
 
-.addres { 
+.addres {
   color: #000000;
-  font-size: 2.1rem;
+  font-size: rem(21px);
   font-weight: 400;
   line-height: 1;
-  margin-bottom: 0.5rem; 
+  margin-bottom: rem(5px);
 }

@@ -1,3 +1,25 @@
+html {
+  font-size: 18px;
+
+  @include tablets {
+    font-size: 17px;
+  }
+
+  @include phones {
+    font-size: 16px;
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-family: "AlegreyaSans";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -9,11 +31,11 @@
 
 .container {
   width: 93.75%;
-  max-width: 94rem;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }
 
-textarea{
+textarea {
   resize: none;
 }

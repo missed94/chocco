@@ -5,45 +5,24 @@
 }
 
 .welcome__hero {
-  width: 37%; 
+  width: 37%;
 }
 
 .welcome__hero-title {
   color: #ffffff;
-  font-size: 4.8rem;
+  font-size: rem(48px);
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 5.8rem;
-  margin-bottom: 0.5rem;
-
-  @include middle {
- 
-    }
-
-  @include small {
-    font-size: 40px;
-    line-height: 36px;
-
-   }
-
-
- 
+  line-height: rem(58px);
+  margin-bottom: rem(5px);
 }
 
 .welcome__hero-desc {
-color: #ffffff;
-font-size: 2.1rem;
-font-weight: 400;
-line-height: 2.5rem;
-margin-bottom: 3.1rem;
-
-@include small {
-  font-size: 18px;
-  line-height: 21px;
-  
-
- }
-
+  color: #ffffff;
+  font-size: rem(21px);
+  font-weight: 400;
+  line-height: rem(25px);
+  margin-bottom: rem(31px);
 }
 
 .welcome__hero-btn {
@@ -51,20 +30,15 @@ margin-bottom: 3.1rem;
   color: #365a49;
 
   &:hover {
-      background-color:#2e4e3f; 
-      color: #ffffff;
+    background-color: #2e4e3f;
+    color: #ffffff;
   }
 }
-
 
 .welcome__hero-img {
   width: 44.66%;
 
   img {
     width: 100%;
-
-    
-
   }
 }
-

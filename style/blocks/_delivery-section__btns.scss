@@ -1,20 +1,18 @@
-
-.delivery-section__btn_buy { 
+.delivery-section__btn_buy {
   background-color: #365a49;
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
-  margin-right: 3rem;
+  margin-right: rem(30px);
 }
 .delivery-section__btn_clear {
   background-color: transparent;
   color: #365a49;
-font-size: 1.8rem;
-font-weight: 400;
-padding: 0;
-cursor: pointer;
-&:hover {
-  color:black;
+  font-size: rem(18px);
+  font-weight: 400;
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    color: black;
+  }
 }
-
- }
