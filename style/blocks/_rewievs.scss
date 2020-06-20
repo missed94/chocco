@@ -1,11 +1,15 @@
 .rewievs__main-title {
   margin-bottom: rem(33px);
   font-size: rem(48px);
+
+  @include phones {
+    font-size: rem(40px);
+  }
 }
 
 .rewievs__display {
   position: relative;
-  padding: rem(50px) rem(188px) rem(37px) rem(43px);
+  padding: rem(50px) rem(43px) rem(37px);
   margin-bottom: rem(19px);
   background: url(./../images/rewievs_display-bg.png) #f8faf9 right top
     no-repeat;
@@ -23,16 +27,41 @@
     left: 50%;
     transform: translate(-50%, -75%);
   }
+
+  @include tablets {
+    padding: rem(50px) rem(21px);
+  }
 }
 
 .rewievs__display-inner {
   display: flex;
+
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
 }
 
 .rewievs__avatar {
   width: rem(254px);
   height: rem(260px);
   margin-right: rem(20px);
+
+  @include tablets{
+    width: rem(131px);
+    height: rem(131px);
+    margin-right: 0;
+
+  }
+
+  @include phones  {
+    width: rem(122px);
+    height: rem(122px);
+  }
+
+
 }
 
 .rewievs__avatar-img {

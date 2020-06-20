@@ -8,6 +8,10 @@
     right: 0;
     bottom: rem(81px);
     position: absolute;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:after {
@@ -15,6 +19,10 @@
     left: rem(20px);
     bottom: rem(83px);
     position: absolute;
+
+    @include tablets {
+      display: none;
+    }
   }
 }
 
@@ -24,5 +32,10 @@
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: rem(54px);
+  margin-bottom: rem(37px);
+
+
+  @include tablets {
+    font-size: rem(40px);
+  }
 }
