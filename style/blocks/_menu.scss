@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   background: red($color: #000000);
+  margin: 0 rem(30px);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top:rem(10px);
 
   @include tablets {
     display: none;
@@ -19,12 +23,15 @@
   line-height: 1;
   z-index: 10;
   margin-right: rem(27px);
+  margin-bottom: 10px;
+  
 
   a {
     color: #ffffff;
     font-size: rem(18px);
     font-weight: 400;
     line-height: 1;
+    white-space: nowrap;
   }
 
   &:last-child {

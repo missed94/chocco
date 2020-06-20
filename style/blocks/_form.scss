@@ -1,5 +1,14 @@
 .form {
   display: flex;
+  @include tablets {
+    flex-direction: column;
+    padding: 0 19%;
+  }
+
+  @include phones {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .form__item {
@@ -8,5 +17,14 @@
 
   &:last-child {
     margin-right: 0;
+    @include tablets {
+      margin-bottom: 0px;
+    }
+  }
+
+  
+  @include tablets {
+    margin-right: 0;
+    margin-bottom: 16px;
   }
 }

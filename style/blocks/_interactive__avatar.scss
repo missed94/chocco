@@ -4,6 +4,11 @@
   border: rem(6px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
+
+  @include phones  {
+    width: rem(64px);
+    height: rem(64px);
+  }
 }
 
 .interactive-avatar_active {

@@ -1,3 +1,10 @@
+.delivery-section__btn {
+  @include tablets {
+text-align: center;
+
+  }
+}
+
 .delivery-section__btn_buy {
   background-color: #365a49;
   color: #ffffff;

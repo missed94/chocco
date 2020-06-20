@@ -6,6 +6,28 @@
 
 .welcome__hero {
   width: 37%;
+
+  @include tablets {
+    width: 100%;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before {
+      content:"";
+      width: rem(316px);
+      height: rem(330px);
+      background: url(./../../images/hero_tablet_choccos.png) center center / contain no-repeat;
+      margin-bottom: rem(12px);
+      
+
+    }
+  } 
+
+ 
 }
 
 .welcome__hero-title {
@@ -15,6 +37,11 @@
   text-transform: uppercase;
   line-height: rem(58px);
   margin-bottom: rem(5px);
+
+  @include phones {
+    font-size: rem(40px);
+    line-height: 36px;
+  }
 }
 
 .welcome__hero-desc {
@@ -22,7 +49,16 @@
   font-size: rem(21px);
   font-weight: 400;
   line-height: rem(25px);
-  margin-bottom: rem(31px);
+  margin-bottom: rem(25px);
+
+  @include tablets {
+    padding:0 26%;
+  }
+  
+  @include phones {
+    padding:0 9%;
+  }
+  
 }
 
 .welcome__hero-btn {
