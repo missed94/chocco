@@ -51,20 +51,16 @@
 }
 
 .benefit__title {
- /*  text-align: center; */
   color: #000000;
   font-size: rem(27px);
   font-weight: 700;
   line-height: 1;
   margin-bottom: rem(22px);
 
-  /* @include phones {
-    text-align: start;
-  } */
 }
 
 .benefit__desc {
-  /* text-align: center; */
+  
 
   p {
     color: #666666;
@@ -73,7 +69,5 @@
     font-size: rem(18px);
   }
 
-  /* @include phones {
-    text-align: start;
-  } */
+  
 }
