@@ -308,7 +308,7 @@ textarea {
         content: "";
         width: 17.5555555556rem;
         height: 18.3333333333rem;
-        background: url(./../../images/hero_tablet_choccos.png) center center/contain no-repeat;
+        background: url(./../images/hero_tablet_choccos.png) center center/contain no-repeat;
         margin-bottom: 0.6666666667rem; } }
 
 .welcome__hero-title {
