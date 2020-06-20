@@ -197,7 +197,7 @@ textarea {
   @media screen and (max-width: 480px) {
     .welcome {
       min-height: 800px;
-      background: url(./../../images/uzor__phones.png) right bottom 85% no-repeat #86c3d7; } }
+      background: url(./../images/uzor__phones.png) right bottom 85% no-repeat #86c3d7; } }
 
 .welcome__container {
   display: flex;
@@ -522,26 +522,17 @@ textarea {
     margin-left: 12px; } }
 
 .benefit__title {
-  /*  text-align: center; */
   color: #000000;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 1.2222222222rem;
-  /* @include phones {
-    text-align: start;
-  } */ }
+  margin-bottom: 1.2222222222rem; }
 
-.benefit__desc {
-  /* text-align: center; */
-  /* @include phones {
-    text-align: start;
-  } */ }
-  .benefit__desc p {
-    color: #666666;
-    font-weight: 300;
-    line-height: 1.1666666667rem;
-    font-size: 1rem; }
+.benefit__desc p {
+  color: #666666;
+  font-weight: 300;
+  line-height: 1.1666666667rem;
+  font-size: 1rem; }
 
 .benefit-section {
   position: relative;

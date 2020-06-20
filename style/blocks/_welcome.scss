@@ -4,8 +4,6 @@
   background: url(./../images/uzor.png) right bottom no-repeat #86c3d7;
   position: relative;
 
- 
-
   &:before {
     content: url(./../images/welcome_berry-maple3.png);
     display: block;
@@ -22,28 +20,25 @@
     right: 0;
   }
 
-  &:before, &:after {
+  &:before,
+  &:after {
     @include tablets {
       display: none;
-      
     }
-  
+
     @include phones {
       display: none;
     }
   }
 
-
   @include tablets {
-   background-position: right bottom 95%;
-    
+    background-position: right bottom 95%;
   }
   @include phones {
     min-height: 800px;
-    background: url(./../images/uzor__phones.png) right bottom 85% no-repeat #86c3d7;
-
+    background: url(./../images/uzor__phones.png) right bottom 85% no-repeat
+      #86c3d7;
   }
-
 }
 
 .welcome__container {
