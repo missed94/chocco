@@ -3,22 +3,27 @@
   /* background: url(./../../images/uzor_list.png) left top 57% no-repeat; */
 
   &:before {
-    content: url(./../images/rewievs__list-berries.png);
+    content:"" /* url(./../images/rewievs__list-berries.png) */;
+    width: rem(139px);
+    height: rem(321px);
     position: absolute;
     left: 0;
     bottom: rem(-160px);
+    background: url(./../images/rewievs__list-berries.png) left center/contain no-repeat;
     z-index: 2;
 
 
     @include tablets {
-      content: url(./../images/rewievs__list-berries-tablets.png); 
-      bottom: rem(-200px);
+      width: 20%;
+
     }
 
     @include phones {
-      content: url(./../images/rewievs__list-berries-tablets.png); 
-      bottom: rem(-200px);
-    }
+      /* content: url(./../images/rewievs__list-berries-tablets.png); 
+      bottom: rem(-200px); */
+      width: 20%;
+      
+    } 
   }
 
   &:after {

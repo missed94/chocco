@@ -679,19 +679,22 @@ textarea {
   position: relative;
   /* background: url(./../../images/uzor_list.png) left top 57% no-repeat; */ }
   .rewievs-section:before {
-    content: url(./../images/rewievs__list-berries.png);
+    content: "";
+    width: 7.7222222222rem;
+    height: 17.8333333333rem;
     position: absolute;
     left: 0;
     bottom: -8.8888888889rem;
+    background: url(./../images/rewievs__list-berries.png) left center/contain no-repeat;
     z-index: 2; }
     @media screen and (max-width: 768px) {
       .rewievs-section:before {
-        content: url(./../images/rewievs__list-berries-tablets.png);
-        bottom: -11.1111111111rem; } }
+        width: 20%; } }
     @media screen and (max-width: 480px) {
       .rewievs-section:before {
-        content: url(./../images/rewievs__list-berries-tablets.png);
-        bottom: -11.1111111111rem; } }
+        /* content: url(./../images/rewievs__list-berries-tablets.png); 
+        bottom: rem(-200px); */
+        width: 20%; } }
   .rewievs-section:after {
     content: url(./../images/rewievs_stawberry.png);
     position: absolute;
