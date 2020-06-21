@@ -1,9 +1,13 @@
 .section {
   height: 100vh;
-  min-height: rem(960px);
+  /* min-height: rem(960px) */;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include se {
+    min-height: rem(800px);
+  }
 }
 
 .section__title {

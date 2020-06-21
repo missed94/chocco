@@ -88,6 +88,15 @@
   font-weight: 400;
   line-height: rem(23px);
   margin-bottom: rem(26px);
+  padding-right: rem(80px);
+
+  @include tablets {
+    padding: 0;
+  }
+
+  @include phones {
+    padding: 0;
+  }
 }
 
 .rewiev-name {

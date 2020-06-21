@@ -1,6 +1,6 @@
 .welcome {
   height: 100vh;
-  min-height: rem(960px);
+  /* min-height: rem(960px) */;
   background: url(./../images/uzor.png) right bottom no-repeat #86c3d7;
   position: relative;
 
@@ -35,9 +35,13 @@
     background-position: right bottom 95%;
   }
   @include phones {
-    min-height: 800px;
+    /* min-height: 800px; */
     background: url(./../images/uzor__phones.png) right bottom 85% no-repeat
       #86c3d7;
+  }
+
+  @include se {
+    min-height: rem(800px);
   }
 }
 
