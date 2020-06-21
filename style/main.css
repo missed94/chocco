@@ -71,10 +71,10 @@ html {
   font-size: 18px; }
   @media screen and (max-width: 768px) {
     html {
-      font-size: 18px; } }
+      font-size: 17px; } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
 
 body {
   height: 100%;
@@ -170,7 +170,7 @@ textarea {
   font-style: italic; }
 .welcome {
   height: 100vh;
-  min-height: 53.3333333333rem;
+  /* min-height: rem(960px) */
   background: url(./../images/uzor.png) right bottom no-repeat #86c3d7;
   position: relative; }
   .welcome:before {
@@ -196,8 +196,11 @@ textarea {
       background-position: right bottom 95%; } }
   @media screen and (max-width: 480px) {
     .welcome {
-      min-height: 800px;
+      /* min-height: 800px; */
       background: url(./../images/uzor__phones.png) right bottom 85% no-repeat #86c3d7; } }
+  @media screen and (max-height: 568px) {
+    .welcome {
+      min-height: 44.4444444444rem; } }
 
 .welcome__container {
   display: flex;
@@ -403,10 +406,13 @@ textarea {
 
 .section {
   height: 100vh;
-  min-height: 53.3333333333rem;
+  /* min-height: rem(960px) */
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media screen and (max-height: 568px) {
+    .section {
+      min-height: 44.4444444444rem; } }
 
 .section__title {
   color: #000000;
@@ -623,7 +629,14 @@ textarea {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2777777778rem;
-  margin-bottom: 1.4444444444rem; }
+  margin-bottom: 1.4444444444rem;
+  padding-right: 4.4444444444rem; }
+  @media screen and (max-width: 768px) {
+    .rewiev__text {
+      padding: 0; } }
+  @media screen and (max-width: 480px) {
+    .rewiev__text {
+      padding: 0; } }
 
 .rewiev-name {
   color: #000000;
@@ -671,11 +684,29 @@ textarea {
     left: 0;
     bottom: -8.8888888889rem;
     z-index: 2; }
+    @media screen and (max-width: 768px) {
+      .rewievs-section:before {
+        content: url(./../images/rewievs__list-berries-tablets.png);
+        bottom: -11.1111111111rem; } }
+    @media screen and (max-width: 480px) {
+      .rewievs-section:before {
+        content: url(./../images/rewievs__list-berries-tablets.png);
+        bottom: -11.1111111111rem; } }
   .rewievs-section:after {
     content: url(./../images/rewievs_stawberry.png);
     position: absolute;
     top: 3.3%;
     right: 1.2%; }
+    @media screen and (max-width: 768px) {
+      .rewievs-section:after {
+        content: url(./../../images/strawberry_tablets.png);
+        right: 0;
+        top: 1%; } }
+    @media screen and (max-width: 480px) {
+      .rewievs-section:after {
+        content: url(./../../images/strawberry_tablets.png);
+        right: 0;
+        top: 1%; } }
 
 .delivery-section {
   background: url(./../backgrounds/delivery-bgc.jpg) no-repeat;
@@ -876,28 +907,30 @@ textarea {
   z-index: 100; }
 
 .fixed-menu__item {
-  margin-bottom: 0.2777777778rem; }
+  margin-bottom: 5px; }
   .fixed-menu__item_active .fixed-menu__link {
-    border-color: white; }
+    border-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
 
 .fixed-menu__link {
-  width: 0.8888888889rem;
-  height: 0.8888888889rem;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  border: 0.0555555556rem solid transparent;
+  border: 1px solid transparent;
   display: block;
   position: relative; }
   .fixed-menu__link:before {
     content: "";
     position: absolute;
     display: block;
-    width: 0.3333333333rem;
-    height: 0.3333333333rem;
+    width: 6px;
+    height: 6px;
     background: white;
     border-radius: 50%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 .hamburger {
   display: none;

@@ -16,6 +16,12 @@
     }
 }
 
+@mixin se{
+  @media screen and(max-height: 568px) {
+    @content;
+    }
+}
+
 
 
 
