@@ -699,12 +699,12 @@ textarea {
     right: 1.2%; }
     @media screen and (max-width: 768px) {
       .rewievs-section:after {
-        content: url(./../../images/strawberry_tablets.png);
+        content: url(./../images/strawberry_tablets.png);
         right: 0;
         top: 1%; } }
     @media screen and (max-width: 480px) {
       .rewievs-section:after {
-        content: url(./../../images/strawberry_tablets.png);
+        content: url(./../images/strawberry_tablets.png);
         right: 0;
         top: 1%; } }
 
