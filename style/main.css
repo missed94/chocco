@@ -696,20 +696,24 @@ textarea {
         bottom: rem(-200px); */
         width: 20%; } }
   .rewievs-section:after {
-    content: url(./../images/rewievs_stawberry.png);
+    content: "";
+    background: url(./../images/rewievs_stawberry.png) right top/contain no-repeat;
+    width: 8.3333333333rem;
+    height: 4.7777777778rem;
     position: absolute;
     top: 3.3%;
     right: 1.2%; }
     @media screen and (max-width: 768px) {
       .rewievs-section:after {
-        content: url(./../images/strawberry_tablets.png);
+        /* content: url(./../images/strawberry_tablets.png); 
         right: 0;
-        top: 1%; } }
+        top: 1%; */ } }
     @media screen and (max-width: 480px) {
       .rewievs-section:after {
-        content: url(./../images/strawberry_tablets.png);
+        width: 25%;
+        /* content: url(./../images/strawberry_tablets.png); 
         right: 0;
-        top: 1%; } }
+        top: 1%; */ } }
 
 .delivery-section {
   background: url(./../backgrounds/delivery-bgc.jpg) no-repeat;

@@ -27,21 +27,25 @@
   }
 
   &:after {
-    content: url(./../images/rewievs_stawberry.png);
+    content: ""/* url(./../images/rewievs_stawberry.png) */;
+    background:url(./../images/rewievs_stawberry.png) right top/contain no-repeat;
+    width: rem(150px);
+    height: rem(86px);
     position: absolute;
     top: 3.3%;
     right: 1.2%;
 
     @include tablets {
-      content: url(./../images/strawberry_tablets.png); 
+      /* content: url(./../images/strawberry_tablets.png); 
       right: 0;
-      top: 1%;
+      top: 1%; */
     }
 
     @include phones {
-      content: url(./../images/strawberry_tablets.png); 
+      width: 25%;
+      /* content: url(./../images/strawberry_tablets.png); 
       right: 0;
-      top: 1%;
+      top: 1%; */
     }
 
   }
