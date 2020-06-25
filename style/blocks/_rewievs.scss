@@ -31,6 +31,11 @@
   @include tablets {
     padding: rem(50px) rem(21px);
   }
+
+  @include phones {
+    background: url(./../images/rewievs_display-bg.png) #f8faf9 right top / 25%
+    no-repeat;
+  }
 }
 
 .rewievs__display-inner {

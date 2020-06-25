@@ -585,6 +585,9 @@ textarea {
   @media screen and (max-width: 768px) {
     .rewievs__display {
       padding: 2.7777777778rem 1.1666666667rem; } }
+  @media screen and (max-width: 480px) {
+    .rewievs__display {
+      background: url(./../images/rewievs_display-bg.png) #f8faf9 right top/25% no-repeat; } }
 
 .rewievs__display-inner {
   display: flex; }
@@ -945,7 +948,7 @@ textarea {
   width: 1.3333333333rem;
   flex-direction: column;
   justify-content: space-between;
-  height: 1.1111111111rem;
+  height: 1.3333333333rem;
   padding-top: 0.3333333333rem; }
   @media screen and (max-width: 768px) {
     .hamburger {
@@ -953,7 +956,7 @@ textarea {
 
 .hamburger__wrapper {
   width: 1.3333333333rem;
-  height: 1.2222222222rem; }
+  height: 1.3333333333rem; }
 
 .hamburger__plank {
   display: block;
@@ -1045,5 +1048,61 @@ textarea {
   height: 100%; }
   .social-icon:hover {
     fill: black; }
+
+.full-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333537;
+  opacity: 0.99;
+  z-index: 1000;
+  transition: all .4s; }
+
+@media screen and (max-width: 768px) {
+  .full-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0; } }
+@media screen and (max-width: 480px) {
+  .full-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0; } }
+
+.full-menu-item {
+  margin-bottom: 3.0555555556rem; }
+  .full-menu-item a {
+    font-size: 2rem;
+    font-weight: 400; }
+  .full-menu-item:last-child {
+    margin-bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .full-menu-item {
+      margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .full-menu-item {
+      margin-right: 0; } }
+
+.close-icon {
+  cursor: pointer;
+  position: absolute;
+  height: 1.1111111111rem;
+  width: 1.1111111111rem;
+  top: 4%;
+  right: 6%;
+  fill: white;
+  opacity: 0.7; }
 
 /*# sourceMappingURL=main.css.map */
