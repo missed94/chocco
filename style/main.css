@@ -1107,7 +1107,7 @@ textarea {
   background: #f8faf9; }
   .composition:after {
     content: "";
-    background: url(./../../images/composition_back-img.png) right center no-repeat;
+    background: url(./../images/composition_back-img.png) right center no-repeat;
     width: 10.8888888889rem;
     height: 25.1666666667rem;
     right: 0;
@@ -1115,14 +1115,14 @@ textarea {
     position: absolute; }
     @media screen and (max-width: 768px) {
       .composition:after {
-        background: url(./../../images/composition-back-image-tablets.png) right center/contain no-repeat;
+        background: url(./../images/composition-back-image-tablets.png) right center/contain no-repeat;
         width: 25%;
         height: 20.1111111111rem;
         bottom: -8.3333333333rem;
         right: -1.1111111111rem; } }
     @media screen and (max-width: 480px) {
       .composition:after {
-        background: url(./../../images/composition-back-image-phones.png) right center/contain no-repeat;
+        background: url(./../images/composition-back-image-phones.png) right center/contain no-repeat;
         width: 30%;
         height: 20.1111111111rem;
         bottom: -9.4444444444rem;
@@ -1167,7 +1167,7 @@ textarea {
       flex-direction: column; } }
 
 .slider-image {
-  background: url(./../../images/slider-image.png) center center/100% no-repeat;
+  background: url(./../images/slider-image.png) center center/100% no-repeat;
   margin-right: 3.6111111111rem;
   width: 50%;
   height: 100%; }
@@ -1187,7 +1187,7 @@ textarea {
         content: "";
         width: 70%;
         height: 18.7222222222rem;
-        background: url(./../../images/slider-img-tablets.png) center center/contain no-repeat;
+        background: url(./../images/slider-img-tablets.png) center center/contain no-repeat;
         margin-bottom: 1.3888888889rem; } }
   @media screen and (max-width: 480px) {
     .slider-desc:before {
