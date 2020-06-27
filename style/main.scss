@@ -17,7 +17,7 @@
 }
 
 @mixin se{
-  @media screen and(max-height: 568px) {
+  @media screen and(max-height: 568px) and (max-width: 325px) {
     @content;
     }
 }
@@ -58,6 +58,10 @@
 @import "./blocks/_footer";
 @import "./blocks/_footer-telephone";
 @import "./blocks/_socials";
-@import "./blocks/full-menu.scss";
+@import "./blocks/_full-menu.scss";
+@import "./blocks/_composition";
+@import "./blocks/_slider-comp-image__hover";
+@import "./blocks/_slider-btn";
+
 
 

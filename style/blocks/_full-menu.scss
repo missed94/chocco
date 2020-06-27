@@ -11,7 +11,7 @@
   background-color: #333537;
   opacity: 0.99;
   z-index: 1000;
-  transition: all .4s;
+  transition: all .3s;
 
   @include tablets {
    
@@ -27,24 +27,21 @@
 }
 
 .full-menu-list {
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
 
   
   @include tablets {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 0;
-    padding: 0;
+    
   }
 
   @include phones {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 0;
-    padding: 0;
+    
   }
 }
 

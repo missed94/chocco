@@ -1,0 +1,280 @@
+.composition {
+  position: relative;
+  background: #f8faf9;
+
+  &:after {
+    content: "";
+    background: url(./../../images/composition_back-img.png) right bottom no-repeat;
+    width: 196px;
+    height: 453px;
+    right: 0;
+    bottom: -217px;
+    position: absolute;
+    
+
+    @include tablets {
+      background: url(./../../images/composition-back-image-tablets.png) right bottom / contain no-repeat;
+      width: 25%;
+      height: 362px;
+      bottom:-130px;
+      right: -20px;
+
+
+    }
+  
+    @include phones {
+      background: url(./../../images/composition-back-image-phones.png) right bottom / contain no-repeat;
+      width: 30%;
+      height: 362px;
+      bottom:-130px;
+      right: -20px;
+
+    }
+
+
+  }
+}
+.composition-container {
+  position: relative;
+  z-index: 2;
+}
+.slider {
+  display: flex;
+
+  overflow: hidden;
+}
+
+.slider__arrow-left-wrapper {
+  cursor: pointer;
+  position: absolute;
+  width: 13px;
+  height: 28px;
+  left: -2%;
+  top: 54%;
+  @include tablets {
+    top: 27%;
+    left: 17%;
+  }
+
+  @include phones {
+    left: -2%;
+    top: 20%;
+  }
+}
+.arrow {
+  width: 13px;
+  height: 28px;
+}
+
+.arrow-left {
+  transform: rotate(180deg);
+}
+.slider-content-wrapper {
+  align-items: center;
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+  }
+
+  @include phones {
+  }
+}
+.slider-image {
+  background: url(./../../images/slider-image.png) center center / 100% no-repeat;
+  margin-right: 65px;
+  width: 50%;
+  height: 100%;
+
+  @include tablets {
+    display: none;
+  }
+
+  @include phones {
+  }
+}
+
+.slider-desc {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  @include tablets {
+    width: 100%;
+    align-items: center;
+    
+
+    &:before {
+      content: "";
+      width: 70%;
+      height: 337px;
+      background: url(./../../images/slider-img-tablets.png) center
+      center/contain no-repeat;
+      margin-bottom: 25px;
+  }
+}
+
+  
+
+
+  @include phones {
+    &:before {
+      margin-bottom: -27px;
+    }
+}
+}
+
+.slider-comp-image {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: #86c3d7;
+  border-radius: 5px;
+  margin-bottom: 31px;
+
+  @include tablets {
+    display: none;
+  }
+
+  @include phones {
+  }
+
+  &:hover {
+    .slider-comp-image__hover-list {
+      display: block;
+    }
+  }
+
+  .slider-comp-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+  }
+}
+
+.slider-chocco-icon {
+  width: 51px;
+  height: 51px;
+  fill: white;
+  margin-bottom: 8px;
+}
+.slider-title {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 42px;
+  margin-bottom: 15px;
+
+  @include tablets {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 13px;
+  }
+
+  @include phones {
+    line-height: 37px;
+
+  }
+}
+
+.slider-desc-text {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 40px;
+
+  @include tablets {
+    margin-bottom: 19px;
+    text-align: center;
+    padding: 0px 81px;
+  }
+
+  @include phones {
+    padding: 0px 11px;
+    margin-bottom: 28px;
+  }
+}
+
+.slider-spec {
+  display: flex;
+  margin-bottom: 33px;
+  flex-wrap: wrap;
+
+  @include phones {
+    margin-bottom: 21px;
+  }
+}
+
+
+
+.calories-wrapper {
+  margin-right: 54px;
+  @include tablets {
+    margin-right: 79px;
+  }
+}
+.calories {
+  
+  margin-bottom: 5px;
+
+
+  
+}
+.calories-amount {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+.weight-wrapper {
+}
+
+.weight {
+  margin-bottom: 5px;
+}
+
+.weight-amount {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+.order {
+  display: flex;
+  align-items: center;
+
+  
+}
+.price {
+  color: #151515;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-right: 25px;
+}
+
+
+
+.slider_arrow-right-wrapper {
+  cursor: pointer;
+  position: absolute;
+  right: -2%;
+  top: 54%;
+
+  @include tablets {
+    top: 27%;
+    right: 10%;
+  }
+
+  @include phones {
+    top: 20%;
+    right: -2%;
+  }
+}

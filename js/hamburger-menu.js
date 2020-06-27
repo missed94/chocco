@@ -19,7 +19,7 @@ FullMenuItem.forEach(function (element) {
 });
 
 window.addEventListener("resize", function (event) {
-  if (event.currentTarget.innerWidth > 768) {
+  if (event.currentTarget.innerWidth > 767) {
     fullMenu.style.left = "100%";
   }
 });
