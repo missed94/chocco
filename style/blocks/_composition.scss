@@ -4,30 +4,30 @@
 
   &:after {
     content: "";
-    background: url(./../../images/composition_back-img.png) right bottom no-repeat;
-    width: 196px;
-    height: 453px;
+    background: url(./../../images/composition_back-img.png) right center no-repeat;
+    width: rem(196px);
+    height: rem(453px);
     right: 0;
-    bottom: -217px;
+    bottom: rem(-217px);
     position: absolute;
     
 
     @include tablets {
-      background: url(./../../images/composition-back-image-tablets.png) right bottom / contain no-repeat;
+      background: url(./../../images/composition-back-image-tablets.png) right center / contain no-repeat;
       width: 25%;
-      height: 362px;
-      bottom:-130px;
-      right: -20px;
+      height: rem(362px);
+      bottom:rem(-150px);
+      right: rem(-20px);
 
 
     }
   
     @include phones {
-      background: url(./../../images/composition-back-image-phones.png) right bottom / contain no-repeat;
+      background: url(./../../images/composition-back-image-phones.png) right center / contain no-repeat;
       width: 30%;
-      height: 362px;
-      bottom:-130px;
-      right: -20px;
+      height: rem(362px);
+      bottom:rem(-170px);
+      right: rem(-20px);
 
     }
 
@@ -47,8 +47,8 @@
 .slider__arrow-left-wrapper {
   cursor: pointer;
   position: absolute;
-  width: 13px;
-  height: 28px;
+  width: rem(13px);
+  height: rem(28px);
   left: -2%;
   top: 54%;
   @include tablets {
@@ -62,8 +62,8 @@
   }
 }
 .arrow {
-  width: 13px;
-  height: 28px;
+  width: rem(13px);
+  height: rem(28px);
 }
 
 .arrow-left {
@@ -82,7 +82,7 @@
 }
 .slider-image {
   background: url(./../../images/slider-image.png) center center / 100% no-repeat;
-  margin-right: 65px;
+  margin-right: rem(65px);
   width: 50%;
   height: 100%;
 
@@ -107,10 +107,10 @@
     &:before {
       content: "";
       width: 70%;
-      height: 337px;
+      height: rem(337px);
       background: url(./../../images/slider-img-tablets.png) center
       center/contain no-repeat;
-      margin-bottom: 25px;
+      margin-bottom: rem(25px);
   }
 }
 
@@ -119,7 +119,7 @@
 
   @include phones {
     &:before {
-      margin-bottom: -27px;
+      margin-bottom: rem(-27px);
     }
 }
 }
@@ -131,11 +131,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 90px;
+  width: rem(90px);
+  height: rem(90px);
   background-color: #86c3d7;
-  border-radius: 5px;
-  margin-bottom: 31px;
+  border-radius: rem(5px);
+  margin-bottom: rem(31px);
 
   @include tablets {
     display: none;
@@ -152,97 +152,95 @@
 
   .slider-comp-title {
     color: #ffffff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 700;
     line-height: 1;
   }
 }
 
 .slider-chocco-icon {
-  width: 51px;
-  height: 51px;
+  width: rem(51px);
+  height: rem(51px);
   fill: white;
-  margin-bottom: 8px;
+  margin-bottom: rem(8px);
 }
 .slider-title {
   color: #000000;
-  font-size: 36px;
+  font-size: rem(36px);
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 42px;
-  margin-bottom: 15px;
+  line-height: rem(42px);
+  margin-bottom: rem(15px);
 
   @include tablets {
-    font-size: 30px;
+    font-size: rem(30px);
     text-align: center;
-    margin-bottom: 13px;
+    margin-bottom: rem(13px);
   }
 
   @include phones {
-    line-height: 37px;
+    line-height: rem(37px);
 
   }
 }
 
 .slider-desc-text {
   color: #666666;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 400;
-  line-height: 21px;
-  margin-bottom: 40px;
+  line-height: rem(21px);
+  margin-bottom: rem(40px);
 
   @include tablets {
-    margin-bottom: 19px;
+    margin-bottom: rem(19px);
     text-align: center;
-    padding: 0px 81px;
+    padding: 0 rem(81px);
   }
 
   @include phones {
-    padding: 0px 11px;
-    margin-bottom: 28px;
+    padding: 0 rem(11px);
+    margin-bottom: rem(28px);
   }
 }
 
 .slider-spec {
   display: flex;
-  margin-bottom: 33px;
+  margin-bottom: rem(33px);
   flex-wrap: wrap;
 
   @include phones {
-    margin-bottom: 21px;
+    margin-bottom: rem(21px);
   }
 }
 
 
 
 .calories-wrapper {
-  margin-right: 54px;
+  margin-right: rem(54px);
   @include tablets {
-    margin-right: 79px;
+    margin-right: rem(79px);
   }
 }
 .calories {
   
-  margin-bottom: 5px;
-
-
-  
+  margin-bottom: rem(5px); 
 }
+
+
 .calories-amount {
   color: #000000;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 700;
 }
-.weight-wrapper {
-}
+
 
 .weight {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 }
 
 .weight-amount {
   color: #000000;
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: 700;
 }
 .order {
@@ -253,11 +251,11 @@
 }
 .price {
   color: #151515;
-  font-size: 60px;
+  font-size: rem(60px);
   font-weight: 300;
   line-height: 1;
   text-transform: uppercase;
-  margin-right: 25px;
+  margin-right: rem(25px);
 }
 
 
