@@ -1107,8 +1107,8 @@ textarea {
   background: #f8faf9; }
   .composition:after {
     content: "";
-    background: url(./../images/composition_back-img.png) right center no-repeat;
-    width: 10.8888888889rem;
+    background: url(./../images/composition_back-img.png) right center/contain no-repeat;
+    width: 20%;
     height: 25.1666666667rem;
     right: 0;
     bottom: -12.0555555556rem;

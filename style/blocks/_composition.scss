@@ -4,8 +4,8 @@
 
   &:after {
     content: "";
-    background: url(./../images/composition_back-img.png) right center no-repeat;
-    width: rem(196px);
+    background: url(./../images/composition_back-img.png) right center/contain no-repeat;
+    width: 20%;
     height: rem(453px);
     right: 0;
     bottom: rem(-217px);
