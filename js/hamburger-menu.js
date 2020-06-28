@@ -18,6 +18,12 @@ FullMenuItem.forEach(function (element) {
   });
 });
 
+fullMenu.addEventListener("click", function(e){
+  if (e.target.className == 'full-menu') {
+  fullMenu.style.left = "100%";
+  }
+})
+
 window.addEventListener("resize", function (event) {
   if (event.currentTarget.innerWidth > 767) {
     fullMenu.style.left = "100%";
