@@ -198,7 +198,7 @@ textarea {
     .welcome {
       /* min-height: 800px; */
       background: url(./../images/uzor__phones.png) right bottom 85% no-repeat #86c3d7; } }
-  @media screen and (max-height: 568px) and (max-width: 325px) {
+  @media screen and (max-height: 568px) {
     .welcome {
       min-height: 44.4444444444rem; } }
 
@@ -410,7 +410,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media screen and (max-height: 568px) and (max-width: 325px) {
+  @media screen and (max-height: 568px) {
     .section {
       min-height: 44.4444444444rem; } }
 
