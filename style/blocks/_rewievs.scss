@@ -1,13 +1,22 @@
 .rewievs__main-title {
   margin-bottom: rem(33px);
   font-size: rem(48px);
+  
+  
 
   @include phones {
     font-size: rem(40px);
   }
 }
 
+.rewievs {
+
+  flex-direction: column;
+  display: flex;
+}
+
 .rewievs__display {
+  
   position: relative;
   padding: rem(50px) rem(43px) rem(37px);
   margin-bottom: rem(19px);
@@ -26,6 +35,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -75%);
+    z-index: 1;
   }
 
   @include tablets {
@@ -39,7 +49,9 @@
 }
 
 .rewievs__display-inner {
-  display: flex;
+/* position: absolute; */
+  display: none;
+  top: 0;
 
   @include tablets{
     flex-direction: column;
@@ -47,6 +59,11 @@
     text-align: center;
 
   }
+}
+
+.rewievs__display-inner_active {
+
+  display: flex;
 }
 
 .rewievs__avatar {
