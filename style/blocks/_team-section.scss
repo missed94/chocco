@@ -8,7 +8,7 @@ position: relative;
         left: 3%;
         bottom: -5%;
         width: 10%;
-        height: 114px;
+        height: rem(114px);
 
         @include tablets {
            
@@ -26,11 +26,11 @@ position: relative;
 }
 
 .team-container {
-max-width: 951px;
+max-width: rem(951px);
 }
 
 .team__title { 
-    margin-bottom: 55px;
+    margin-bottom: rem(55px);
 
 }
 
@@ -53,7 +53,7 @@ text-align: center;
 .teammate-item { 
 width: 25%;
 text-align: center;
-margin-right: 20px;
+margin-right: rem(20px);
 
 &:last-child {
     margin-right: 0;
@@ -74,14 +74,14 @@ margin-right: 20px;
 }
 
 .teammate__photo-wrapper { 
-margin-bottom: 25px;
+margin-bottom: rem(25px);
 
 @include tablets {
     display: none;
 }
 
 @include phones {
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 
@@ -95,24 +95,25 @@ margin-bottom: 25px;
 
 
 .teammate-name-wrapper {
+    cursor: pointer;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-bottom: 10px;
+margin-bottom: rem(10px);
 
 @include tablets {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 @include phones {
-    margin-bottom: 9px;
+    margin-bottom: rem(9px);
 }
 }
 
 .teammate-name { 
 position: relative;
 color: #000000;
-font-size: 21px;
+font-size: rem(21px);
 font-weight: 700;
 
 
@@ -120,11 +121,8 @@ font-weight: 700;
 }
 
 .team__desc-arrow { 
-  
-cursor: pointer;
-display: flex;
-top: 42%;
-margin-left: 5px;
+display:flex;
+margin-left: rem(5px);
 
 }
 
@@ -135,9 +133,9 @@ margin-left: 5px;
 }
 
 .position-wrapper { 
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+display:flex;
+flex-direction: column;
+align-items: center;
 height: 0;
 overflow: hidden;
 }
@@ -147,7 +145,7 @@ overflow: hidden;
     height: auto;
 
     @include tablets {
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
 
     }
 
@@ -164,21 +162,21 @@ overflow: hidden;
 
     @include phones {
         margin-right: 0;
-        width: 142px;
+        width: rem(142px);
      
      }
 }
 
 .position { 
     color: #000000;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 400;
-    margin-bottom: 3px;
+    margin-bottom: rem(3px);
 }
 
 .position-desc { 
     color: #666666;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 300;
     
     line-height: 1.3;

@@ -1994,7 +1994,7 @@ textarea {
   left: 3%;
   bottom: -5%;
   width: 10%;
-  height: 114px;
+  height: 6.3333333333rem;
 }
 @media screen and (max-width: 768px) {
   .team-section:before {
@@ -2008,11 +2008,11 @@ textarea {
 }
 
 .team-container {
-  max-width: 951px;
+  max-width: 52.8333333333rem;
 }
 
 .team__title {
-  margin-bottom: 55px;
+  margin-bottom: 3.0555555556rem;
 }
 
 .teammates-list {
@@ -2040,7 +2040,7 @@ textarea {
 .teammate-item {
   width: 25%;
   text-align: center;
-  margin-right: 20px;
+  margin-right: 1.1111111111rem;
 }
 .teammate-item:last-child {
   margin-right: 0;
@@ -2059,7 +2059,7 @@ textarea {
 }
 
 .teammate__photo-wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 1.3888888889rem;
 }
 @media screen and (max-width: 768px) {
   .teammate__photo-wrapper {
@@ -2068,7 +2068,7 @@ textarea {
 }
 @media screen and (max-width: 480px) {
   .teammate__photo-wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 0.8333333333rem;
   }
 }
 
@@ -2077,6 +2077,7 @@ textarea {
 }
 
 .teammate-name-wrapper {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2086,33 +2087,31 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.5555555556rem;
 }
 @media screen and (max-width: 768px) {
   .teammate-name-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 1.1111111111rem;
   }
 }
 @media screen and (max-width: 480px) {
   .teammate-name-wrapper {
-    margin-bottom: 9px;
+    margin-bottom: 0.5rem;
   }
 }
 
 .teammate-name {
   position: relative;
   color: #000000;
-  font-size: 21px;
+  font-size: 1.1666666667rem;
   font-weight: 700;
 }
 
 .team__desc-arrow {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 42%;
-  margin-left: 5px;
+  margin-left: 0.2777777778rem;
 }
 
 .team__desc-arrow-img_active {
@@ -2140,7 +2139,7 @@ textarea {
 }
 @media screen and (max-width: 768px) {
   .position-wrapper_active {
-    margin-bottom: 20px;
+    margin-bottom: 1.1111111111rem;
   }
 }
 
@@ -2155,20 +2154,20 @@ textarea {
 @media screen and (max-width: 480px) {
   .position_photo-wrapper {
     margin-right: 0;
-    width: 142px;
+    width: 7.8888888889rem;
   }
 }
 
 .position {
   color: #000000;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 3px;
+  margin-bottom: 0.1666666667rem;
 }
 
 .position-desc {
   color: #666666;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.3;
 }
