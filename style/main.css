@@ -1176,10 +1176,12 @@ textarea {
   overflow: hidden; }
 
 .slider-content-item {
+  position: relative;
   flex-shrink: 0;
   align-items: center;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  left: 0; }
   @media screen and (max-width: 768px) {
     .slider-content-item {
       flex-direction: column; } }
