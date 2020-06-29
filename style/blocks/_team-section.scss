@@ -1,0 +1,185 @@
+
+.team-section { 
+position: relative;
+    &:before {
+        content:"";
+        position: absolute;
+        background: url(./../images/berry_team.png) center center / contain no-repeat;
+        left: 3%;
+        bottom: -5%;
+        width: 10%;
+        height: 114px;
+
+        @include tablets {
+           
+            width: 13.3%;
+         
+         }
+
+        @include phones {
+           
+            width: 22%;
+         
+         }
+    }
+
+}
+
+.team-container {
+max-width: 951px;
+}
+
+.team__title { 
+    margin-bottom: 55px;
+
+}
+
+.teammates { 
+
+}
+
+.teammates-list { 
+display: flex;
+justify-content: center;
+/* align-items: center; */
+text-align: center;
+
+@include tablets {
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+.teammate-item { 
+width: 25%;
+text-align: center;
+margin-right: 20px;
+
+&:last-child {
+    margin-right: 0;
+}
+
+@include tablets {
+   margin-right: 0;
+   width: 32%;
+
+}
+
+@include phones {
+    margin-right: 0;
+    width: 52%;
+ 
+ }
+
+}
+
+.teammate__photo-wrapper { 
+margin-bottom: 25px;
+
+@include tablets {
+    display: none;
+}
+
+@include phones {
+    margin-bottom: 15px;
+}
+
+
+}
+
+
+.teammate__photo { 
+    width: 100%;
+}
+
+
+
+.teammate-name-wrapper {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+
+@include tablets {
+    margin-bottom: 20px;
+}
+
+@include phones {
+    margin-bottom: 9px;
+}
+}
+
+.teammate-name { 
+position: relative;
+color: #000000;
+font-size: 21px;
+font-weight: 700;
+
+
+
+}
+
+.team__desc-arrow { 
+  
+cursor: pointer;
+display: flex;
+top: 42%;
+margin-left: 5px;
+
+}
+
+
+
+.team__desc-arrow-img_active {
+    transform: rotate(180deg);
+}
+
+.position-wrapper { 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+height: 0;
+overflow: hidden;
+}
+
+
+.position-wrapper_active {
+    height: auto;
+
+    @include tablets {
+        margin-bottom: 20px;
+
+    }
+
+}
+
+.position_photo-wrapper {
+
+    display: none;
+
+    @include tablets {
+        display: block;
+
+    }
+
+    @include phones {
+        margin-right: 0;
+        width: 142px;
+     
+     }
+}
+
+.position { 
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.position-desc { 
+    color: #666666;
+    font-size: 18px;
+    font-weight: 300;
+    
+    line-height: 1.3;
+}
