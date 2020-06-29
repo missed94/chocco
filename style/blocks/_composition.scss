@@ -69,9 +69,20 @@
 .arrow-left {
   transform: rotate(180deg);
 }
-.slider-content-wrapper {
+
+.slider-content-list {
+  position: relative;
+  left:0;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider-content-item {
+  flex-shrink:0;
   align-items: center;
   display: flex;
+  width: 100%;
+
 
   @include tablets {
     flex-direction: column;
