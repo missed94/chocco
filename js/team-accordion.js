@@ -1,4 +1,4 @@
-
+/* 
 const items = $('.teammate-name-wrapper');
 const positionWrapper = $('.position-wrapper');
 const arrow = $('.team__desc-arrow-img');
@@ -16,21 +16,18 @@ $(item).on('click', function (e) {
 
   })
   
-  
-
     $(positionWrapper[i]).toggleClass('position-wrapper_active');
     $(arrow[i]).toggleClass('team__desc-arrow-img_active');
     
-
   })
 
-})
+}) */
 
 
 
 
 
-/* 
+
 const items = document.querySelectorAll('.teammate-name-wrapper');
 const positionWrapper = document.querySelectorAll('.position-wrapper');
 const arrow = document.querySelectorAll('.team__desc-arrow-img');
@@ -53,19 +50,11 @@ for (let i = 0; i < items.length; i++) {
 
     }
 
-
-    if (!positionWrapper[i].classList.contains('position-wrapper_active')) {
-
-    positionWrapper[i].classList.add('position-wrapper_active');
-    arrow[i].classList.add('team__desc-arrow-img_active');
+    positionWrapper[i].classList.toggle('position-wrapper_active');
+    arrow[i].classList.toggle('team__desc-arrow-img_active');
     
-    } else {
-      positionWrapper[i].classList.remove('position-wrapper_active');
-      arrow[i].classList.remove('team__desc-arrow-img_active');
-
-    }
-
+    
 
   })
 
-} */
+}
