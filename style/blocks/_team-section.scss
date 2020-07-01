@@ -34,9 +34,10 @@ max-width: rem(951px);
 
 }
 
-.teammates { 
-
+.teammate-desc {
+    position: relative;
 }
+
 
 .teammates-list { 
 display: flex;
@@ -95,7 +96,7 @@ margin-bottom: rem(25px);
 
 
 .teammate-name-wrapper {
-    cursor: pointer;
+cursor: pointer;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -130,23 +131,32 @@ margin-left: rem(5px);
 
 .team__desc-arrow-img_active {
     transform: rotate(180deg);
+    transition: all 0.3s;
 }
 
-.position-wrapper { 
+.position-wrapper {   
+position: absolute; 
 display:flex;
 flex-direction: column;
 align-items: center;
+width: 25%;
 height: 0;
 overflow: hidden;
+transition: all 0.3s;
 }
 
 
 .position-wrapper_active {
-    height: auto;
+    height: 95px;
+    
 
     @include tablets {
         margin-bottom: rem(20px);
-
+        position: relative; 
+        width: auto;
+        height: auto;
+        
+        
     }
 
 }

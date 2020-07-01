@@ -6,7 +6,7 @@ const avatars = document.querySelectorAll('.interactive-avatar');
 //переменная с блоками дисплей
 const displayInner = document.querySelectorAll('.rewievs__display-inner');
 
-/* 
+
 //объявляем цикл который перебирает все круглые аватарки
 for (let i = 0; i < avatars.length; i++) {
     //присваиваем элементу цикла(конкретной аватрке) переменную элемент
@@ -35,11 +35,11 @@ for (let i = 0; i < avatars.length; i++) {
         e.currentTarget.classList.add('interactive-avatar_active');
     })
 }
- */
 
 
 
-function change(target, 
+
+/* function change(target, 
                 i, 
                 avatars,
                 displayInner, 
@@ -79,4 +79,4 @@ for (let i = 0;
             'rewievs__display-inner_active',
             e)
     })
-}
+} */
