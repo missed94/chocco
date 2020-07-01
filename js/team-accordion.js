@@ -1,4 +1,4 @@
-/* 
+
 const items = $('.teammate-name-wrapper');
 const positionWrapper = $('.position-wrapper');
 const arrow = $('.team__desc-arrow-img');
@@ -21,14 +21,14 @@ $(item).on('click', function (e) {
     
   })
 
-}) */
+})
 
 
 
 
 
 
-const items = document.querySelectorAll('.teammate-name-wrapper');
+/* const items = document.querySelectorAll('.teammate-name-wrapper');
 const positionWrapper = document.querySelectorAll('.position-wrapper');
 const arrow = document.querySelectorAll('.team__desc-arrow-img');
 
@@ -57,4 +57,4 @@ for (let i = 0; i < items.length; i++) {
 
   })
 
-}
+} */
