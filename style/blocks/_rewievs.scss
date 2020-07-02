@@ -52,6 +52,9 @@
 /* position: absolute; */
   display: none;
   top: 0;
+  
+  
+  
 
   @include tablets{
     flex-direction: column;
@@ -64,6 +67,8 @@
 .rewievs__display-inner_active {
 
   display: flex;
+ 
+  
 }
 
 .rewievs__avatar {

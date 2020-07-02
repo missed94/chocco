@@ -1686,7 +1686,8 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  -webkit-transition: left 0.3s;
+  transition: left 0.3s;
 }
 
 .slider-content-item {
@@ -1712,14 +1713,34 @@ textarea {
 }
 
 .slider-image {
-  background: url(./../images/slider-image.png) center center/100% no-repeat;
+  /* background: url(./../images/slider-image.png) center center / 100% no-repeat; */
   margin-right: 3.6111111111rem;
   width: 50%;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*  height: 100%; */
+}
+.slider-image img {
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .slider-image {
-    display: none;
+    margin-right: 0;
+    margin-bottom: 1.3888888889rem;
+    width: 54%;
+    /*  */
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider-image {
+    width: 79%;
   }
 }
 
@@ -1739,21 +1760,21 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .slider-desc:before {
-    content: "";
-    width: 70%;
-    height: 18.7222222222rem;
-    background: url(./../images/slider-img-tablets.png) center center/contain no-repeat;
-    margin-bottom: 1.3888888889rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .slider-desc:before {
-    margin-bottom: -1.5rem;
+    /* &:before {
+      content: "";
+      width: 70%;
+      height: rem(337px);
+      background: url(./../images/slider-img-tablets.png) center
+      center/contain no-repeat;
+      margin-bottom: rem(25px); */
   }
 }
 
+@media screen and (max-width: 480px) {
+  /* &:before {
+    margin-bottom: rem(-27px);
+  } */
+}
 .slider-comp-image {
   position: relative;
   cursor: pointer;
@@ -1815,7 +1836,7 @@ textarea {
 }
 @media screen and (max-width: 480px) {
   .slider-title {
-    line-height: 2.0555555556rem;
+    line-height: 1.6666666667rem;
   }
 }
 
