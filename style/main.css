@@ -1682,6 +1682,7 @@ textarea {
 
 .slider-content-list {
   position: relative;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1691,7 +1692,6 @@ textarea {
 }
 
 .slider-content-item {
-  position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-align: center;
@@ -1752,21 +1752,9 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /* &:before {
-      content: "";
-      width: 70%;
-      height: rem(337px);
-      background: url(./../images/slider-img-tablets.png) center
-      center/contain no-repeat;
-      margin-bottom: rem(25px); */
   }
 }
 
-@media screen and (max-width: 480px) {
-  /* &:before {
-    margin-bottom: rem(-27px);
-  } */
-}
 .slider-comp-image {
   position: relative;
   cursor: pointer;
@@ -2065,7 +2053,7 @@ textarea {
           justify-content: center;
   /* align-items: center; */
   text-align: center;
-  min-height: 458px;
+  min-height: 25.4444444444rem;
 }
 @media screen and (max-width: 768px) {
   .teammates-list {

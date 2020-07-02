@@ -72,13 +72,13 @@
 
 .slider-content-list {
   position: relative;
+  left: 0;
   display: flex;
   width: 100%;
   transition: left 0.3s;
 }
 
 .slider-content-item {
-  position: relative;
   flex-shrink:0;
   align-items: center;
   display: flex;
@@ -125,14 +125,6 @@
     width: 100%;
     align-items: center;
     
-
-    /* &:before {
-      content: "";
-      width: 70%;
-      height: rem(337px);
-      background: url(./../images/slider-img-tablets.png) center
-      center/contain no-repeat;
-      margin-bottom: rem(25px); */
   }
 }
 
@@ -140,9 +132,7 @@
 
 
   @include phones {
-    /* &:before {
-      margin-bottom: rem(-27px);
-    } */
+    
 }
 
 
