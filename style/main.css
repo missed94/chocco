@@ -1686,6 +1686,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-transition: left 0.3s;
   transition: left 0.3s;
 }
