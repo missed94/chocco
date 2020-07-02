@@ -1691,6 +1691,7 @@ textarea {
 }
 
 .slider-content-item {
+  position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-align: center;
