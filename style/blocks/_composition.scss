@@ -72,14 +72,12 @@
 
 .slider-content-list {
   position: relative;
-  left:0;
   display: flex;
   width: 100%;
   transition: left 0.3s;
 }
 
 .slider-content-item {
-  position: relative;
   flex-shrink:0;
   align-items: center;
   display: flex;
@@ -95,13 +93,11 @@
   }
 }
 .slider-image {
-  /* background: url(./../images/slider-image.png) center center / 100% no-repeat; */
   margin-right: rem(65px);
   width: 50%;
-  display: flex;
+/*   display: flex;
   justify-content: center;
-  align-items: center;
- /*  height: 100%; */
+  align-items: center; */
 
   img {
     width: 100%;

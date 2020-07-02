@@ -1682,7 +1682,6 @@ textarea {
 
 .slider-content-list {
   position: relative;
-  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1692,7 +1691,6 @@ textarea {
 }
 
 .slider-content-item {
-  position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-align: center;
@@ -1714,19 +1712,11 @@ textarea {
 }
 
 .slider-image {
-  /* background: url(./../images/slider-image.png) center center / 100% no-repeat; */
   margin-right: 3.6111111111rem;
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*  height: 100%; */
+  /*   display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 .slider-image img {
   width: 100%;
