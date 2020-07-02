@@ -35,6 +35,9 @@ max-width: rem(951px);
 }
 
 .teammate-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
 
@@ -44,10 +47,12 @@ display: flex;
 justify-content: center;
 /* align-items: center; */
 text-align: center;
+min-height: 458px;
 
 @include tablets {
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
 }
 
@@ -62,13 +67,13 @@ margin-right: rem(20px);
 
 @include tablets {
    margin-right: 0;
-   width: 32%;
+   width: 33%;
 
 }
 
 @include phones {
     margin-right: 0;
-    width: 52%;
+    width: 55%;
  
  }
 
@@ -96,6 +101,7 @@ margin-bottom: rem(25px);
 
 
 .teammate-name-wrapper {
+position: relative;
 cursor: pointer;
 display: flex;
 align-items: center;
@@ -135,11 +141,11 @@ margin-left: rem(5px);
 }
 
 .position-wrapper {   
-position: absolute; 
+position: relative; 
 display:flex;
 flex-direction: column;
 align-items: center;
-width: 25%;
+width: auto;
 height: 0;
 overflow: hidden;
 transition: all 0.3s;
@@ -147,16 +153,18 @@ transition: all 0.3s;
 
 
 .position-wrapper_active {
-    height: 95px;
+    height: auto;
     
 
     @include tablets {
         margin-bottom: rem(20px);
-        position: relative; 
+        /* position: relative; */ 
         width: auto;
         height: auto;
-        
-        
+    }
+
+    @include phones {
+        height: auto;
     }
 
 }
@@ -190,4 +198,8 @@ transition: all 0.3s;
     font-weight: 300;
     
     line-height: 1.3;
+
+    @include tablets {
+        /* padding: 0px 72px;  */
+    }
 }
