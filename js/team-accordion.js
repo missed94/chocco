@@ -3,26 +3,36 @@ const openItem = function (item) {
   const contentBlock = container.find(".position-wrapper");
   const textBLock = contentBlock.find(".position");
   const reqHeight = textBLock.height();
+  const arrow = container.find(".team__desc-arrow-img");
 
-  container.addClass(".teammate-item_active");
+  container.addClass("teammate-item_active");
+  arrow.addClass("team__desc-arrow-img_active");
 
   contentBlock.height(reqHeight);
 };
 
+
+
+
 const closeEveryItem = function (container) {
   const items = container.find(".position-wrapper");
   const itemContainer = container.find(".teammate-item");
+  const itemArrow = container.find(".team__desc-arrow-img");
   items.height(0);
 
-  itemContainer.removeClass(".teammate-item_active");
+  itemArrow.removeClass("team__desc-arrow-img_active");
+  itemContainer.removeClass("teammate-item_active");
 };
+
+
+
 
 $(".teammate-name-wrapper").on("click", function (e) {
   const $this = $(e.currentTarget);
   const container = $this.closest(".team");
   const elemContainer = $this.closest(".teammate-item");
 
-  if (elemContainer.hasClass(".teammate-item_active")) {
+  if (elemContainer.hasClass("teammate-item_active")) {
     closeEveryItem(container);
   } else {
     closeEveryItem(container);
