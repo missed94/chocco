@@ -29,10 +29,10 @@
   font-size: rem(18px);
   font-weight: 400;
   line-height: 1;
-  border: rem(3px) solid transparent;
+  border: 3px solid transparent;
 
   &:focus {
-    border: rem(3px) solid #dee2bd;
+    border: 3px solid #dee2bd;
     outline: none;
   }
 
@@ -49,6 +49,10 @@
   @include tablets {
 height: 80px;
 }
+}
+
+.input-error {
+  border: 3px solid hotpink;
 }
 
 .form__title {
