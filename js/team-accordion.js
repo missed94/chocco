@@ -20,9 +20,7 @@ const closeEveryItem = function(container) {
 $('.teammate-name-wrapper').on('click', function(e) {
 
   const $this = $(e.currentTarget);
-  const container = $this.clo
-
-  closeEveryItem()
+ 
   openItem($this);
 })
 
