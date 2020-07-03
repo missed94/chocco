@@ -808,9 +808,9 @@ textarea {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  border: 0.1666666667rem solid transparent; }
+  border: 3px solid transparent; }
   .form__input:focus {
-    border: 0.1666666667rem solid #dee2bd;
+    border: 3px solid #dee2bd;
     outline: none; }
   @media screen and (max-width: 768px) {
     .form__input {
@@ -823,6 +823,9 @@ textarea {
   @media screen and (max-width: 768px) {
     .form__input_textarea {
       height: 80px; } }
+
+.input-error {
+  border: 3px solid hotpink; }
 
 .form__title {
   color: #365a49;
@@ -1419,17 +1422,26 @@ textarea {
   align-items: center;
   position: relative; }
 
-.teammates-list {
+.team {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  text-align: center;
+  text-align: center; }
+
+.teammates-list-desctop {
+  flex-direction: row;
   min-height: 25.4444444444rem; }
   @media screen and (max-width: 768px) {
-    .teammates-list {
-      flex-direction: column;
-      align-items: center;
-      height: auto; } }
+    .teammates-list-desctop {
+      display: none; } }
+
+.teammates-list-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (max-width: 768px) {
+    .teammates-list-mobile {
+      display: flex; } }
 
 .teammate-item {
   width: 25%;
@@ -1465,12 +1477,6 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5555555556rem; }
-  @media screen and (max-width: 768px) {
-    .teammate-name-wrapper {
-      margin-bottom: 1.1111111111rem; } }
-  @media screen and (max-width: 480px) {
-    .teammate-name-wrapper {
-      margin-bottom: 0.5rem; } }
 
 .teammate-name {
   position: relative;
@@ -1487,26 +1493,25 @@ textarea {
   transition: all 0.3s; }
 
 .position-wrapper {
+  overflow: hidden;
+  height: 0;
+  transition: all 0.3s;
+  /*   @include tablets {
+        margin-bottom: rem(20px);
+        
+    } */ }
+  @media screen and (max-width: 768px) {
+    .position-wrapper {
+      margin-bottom: 1.1111111111rem; } }
+  @media screen and (max-width: 480px) {
+    .position-wrapper {
+      margin-bottom: 0.5rem; } }
+
+.position {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: auto;
-  height: 0;
-  overflow: hidden;
-  transition: all 0.3s; }
-
-.position-wrapper_active {
-  height: auto; }
-  @media screen and (max-width: 768px) {
-    .position-wrapper_active {
-      margin-bottom: 1.1111111111rem;
-      /* position: relative; */
-      width: auto;
-      height: auto; } }
-  @media screen and (max-width: 480px) {
-    .position-wrapper_active {
-      height: auto; } }
+  align-items: center; }
 
 .position_photo-wrapper {
   display: none; }
@@ -1518,7 +1523,7 @@ textarea {
       margin-right: 0;
       width: 7.8888888889rem; } }
 
-.position {
+.position-place {
   color: #000000;
   font-size: 1rem;
   font-weight: 400;
@@ -1532,5 +1537,37 @@ textarea {
   @media screen and (max-width: 768px) {
     .position-desc {
       /* padding: 0px 72px;  */ } }
+
+.modal {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(00, 00, 00, .5 );
+  display: flex;
+  z-index:10; */
+  display: none; }
+
+.modal-error {
+  color: red; }
+
+.modal__container {
+  /*  margin:auto; */
+  background: white;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.modal__content {
+  margin-bottom: 20px; }
+
+.modal__btn {
+  background-color: #365a49;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,36 @@
+const openItem = function (item) {
+  const container = item.closest(".teammate-item");
+  const contentBlock = container.find(".position-wrapper");
+  const textBLock = contentBlock.find(".position");
+  const reqHeight = textBLock.height();
 
-const items = $('.teammate-name-wrapper');
+  container.addClass(".teammate-item_active");
+
+  contentBlock.height(reqHeight);
+};
+
+const closeEveryItem = function (container) {
+  const items = container.find(".position-wrapper");
+  const itemContainer = container.find(".teammate-item");
+  items.height(0);
+
+  itemContainer.removeClass(".teammate-item_active");
+};
+
+$(".teammate-name-wrapper").on("click", function (e) {
+  const $this = $(e.currentTarget);
+  const container = $this.closest(".team");
+  const elemContainer = $this.closest(".teammate-item");
+
+  if (elemContainer.hasClass(".teammate-item_active")) {
+    closeEveryItem(container);
+  } else {
+    closeEveryItem(container);
+    openItem($this);
+  }
+});
+
+/* const items = $('.teammate-name-wrapper');
 const positionWrapper = $('.position-wrapper');
 const arrow = $('.team__desc-arrow-img');
 
@@ -21,12 +52,7 @@ $(item).on('click', function (e) {
     
   })
 
-})
-
-
-
-
-
+}) */
 
 /* const items = document.querySelectorAll('.teammate-name-wrapper');
 const positionWrapper = document.querySelectorAll('.position-wrapper');
