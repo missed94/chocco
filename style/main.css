@@ -2154,6 +2154,17 @@ textarea {
 }
 
 .position-wrapper {
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  /*   @include tablets {
+        margin-bottom: rem(20px);
+        
+    } */
+}
+
+.position {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2165,27 +2176,10 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: auto;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.position-wrapper_active {
-  height: auto;
 }
 @media screen and (max-width: 768px) {
-  .position-wrapper_active {
-    margin-bottom: 1.1111111111rem;
-    /* position: relative; */
-    width: auto;
-    height: auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  .position-wrapper_active {
-    height: auto;
+  .position {
+    /* margin-bottom: rem(20px); */
   }
 }
 

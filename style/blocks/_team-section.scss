@@ -140,34 +140,36 @@ margin-left: rem(5px);
     transition: all 0.3s;
 }
 
-.position-wrapper {   
+.position-wrapper {
+    overflow: hidden;
+    height: 0;
+    transition: all 0.3s;
+
+  /*   @include tablets {
+        margin-bottom: rem(20px);
+        
+    } */
+    
+    
+}
+
+
+
+.position {   
 position: relative; 
 display:flex;
 flex-direction: column;
 align-items: center;
-width: auto;
-height: 0;
-overflow: hidden;
-transition: all 0.3s;
-}
 
-
-.position-wrapper_active {
-    height: auto;
+@include tablets {
+    /* margin-bottom: rem(20px); */
     
-
-    @include tablets {
-        margin-bottom: rem(20px);
-        /* position: relative; */ 
-        width: auto;
-        height: auto;
-    }
-
-    @include phones {
-        height: auto;
-    }
+}
 
 }
+
+
+
 
 .position_photo-wrapper {
 

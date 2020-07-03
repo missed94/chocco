@@ -1,5 +1,46 @@
 
-const items = $('.teammate-name-wrapper');
+
+
+const openItem = function(item) {
+const container = item.closest('.teammate-item');
+const contentBlock = container.find('.position-wrapper');
+const textBLock = contentBlock.find('.position');
+const reqHeight = textBLock.height();
+
+
+contentBlock.height(reqHeight);
+}
+
+const closeEveryItem = function(container) {
+  const items = container.find('.position-wrapper');
+  items.height(0);
+}
+
+
+$('.teammate-name-wrapper').on('click', function(e) {
+
+  const $this = $(e.currentTarget);
+  const container = $this.clo
+
+  closeEveryItem()
+  openItem($this);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const items = $('.teammate-name-wrapper');
 const positionWrapper = $('.position-wrapper');
 const arrow = $('.team__desc-arrow-img');
 
@@ -21,7 +62,7 @@ $(item).on('click', function (e) {
     
   })
 
-})
+}) */
 
 
 
