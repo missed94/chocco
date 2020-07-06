@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const fullMenu = document.querySelector(".full-menu");
-const closeBtn = document.querySelector(".close-icon");
+const closeBtn = document.querySelector("#close-full-menu");
 const FullMenuItem = document.querySelectorAll(".full-menu-item");
 const wrapper = document.querySelector(".wrapper");
 

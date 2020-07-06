@@ -2005,6 +2005,7 @@ textarea {
 
 .team-section {
   position: relative;
+  z-index: 3;
 }
 .team-section:before {
   content: "";
@@ -2276,4 +2277,131 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.vertical-menu__section {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  background-image: url(./../../backgrounds/vertical-acco-bcgrnd.png);
+  background-size: cover;
+}
+
+.vertical-menu__title {
+  position: absolute;
+  top: 9%;
+  left: 7%;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.acco-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /*  position: absolute;
+   right: 0;
+   top: 0; */
+}
+
+.acco-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  z-index: 2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.acco-item_active {
+  width: 630px;
+}
+@media screen and (max-width: 768px) {
+  .acco-item_active {
+    width: 100%;
+  }
+}
+
+.acco-title-wrapper {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100px;
+  background-color: black;
+  background-image: url(./../../backgrounds/vert-menu__bgc-item1.png);
+  background-size: cover;
+  padding-bottom: 70px;
+}
+
+.second-title-wrapper {
+  background-color: black;
+  background-image: url(./../../backgrounds/vert-menu__bgc-item2.png);
+  background-size: cover;
+}
+
+.third-title-wrapper {
+  background-color: black;
+  background-image: url(./../../backgrounds/vert-menu__bgc-item3.png);
+  background-size: cover;
+}
+
+.acco-title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
+}
+
+.acco-content-wrap {
+  overflow: hidden;
+}
+
+.acco-content {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-color: #333537;
+  opacity: 0.93;
+  padding: 50px 126px 0 27px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.97px;
+}
+
+.acco-desc {
+  opacity: 0;
+}
+
+.acco-item_active .acco-desc {
+  opacity: 1;
+  -webkit-transition: opacity .3s .5s;
+  transition: opacity .3s .5s;
+}
+
+.close-vert-menu {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 32px;
+  top: 26px;
 }

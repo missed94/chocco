@@ -1,6 +1,7 @@
 
 .team-section { 
 position: relative;
+z-index: 3;
     &:before {
         content:"";
         position: absolute;
