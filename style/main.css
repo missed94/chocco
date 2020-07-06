@@ -1660,11 +1660,15 @@ textarea {
   opacity: 1;
   transition: opacity .3s .5s; }
 
-.close-vert-menu {
+.close-wrapper {
   position: absolute;
   width: 18px;
   height: 18px;
   right: 32px;
   top: 26px; }
+
+.close-vert-menu {
+  width: 18px;
+  height: 18px; }
 
 /*# sourceMappingURL=main.css.map */
