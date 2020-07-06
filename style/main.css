@@ -1603,7 +1603,7 @@ textarea {
   transition: all .5s; }
 
 .acco-item_active {
-  width: 630px; }
+  width: 58%; }
   @media screen and (max-width: 768px) {
     .acco-item_active {
       width: 100%; } }
