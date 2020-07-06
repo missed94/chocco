@@ -1575,7 +1575,7 @@ textarea {
   position: relative;
   height: 100vh;
   background-color: black;
-  background-image: url(./../../backgrounds/vertical-acco-bcgrnd.png);
+  background-image: url(./../backgrounds/vertical-acco-bcgrnd.png);
   background-size: cover; }
 
 .vertical-menu__title {
@@ -1615,18 +1615,18 @@ textarea {
   align-items: flex-end;
   width: 100px;
   background-color: black;
-  background-image: url(./../../backgrounds/vert-menu__bgc-item1.png);
+  background-image: url(./../backgrounds/vert-menu__bgc-item1.png);
   background-size: cover;
   padding-bottom: 70px; }
 
 .second-title-wrapper {
   background-color: black;
-  background-image: url(./../../backgrounds/vert-menu__bgc-item2.png);
+  background-image: url(./../backgrounds/vert-menu__bgc-item2.png);
   background-size: cover; }
 
 .third-title-wrapper {
   background-color: black;
-  background-image: url(./../../backgrounds/vert-menu__bgc-item3.png);
+  background-image: url(./../backgrounds/vert-menu__bgc-item3.png);
   background-size: cover; }
 
 .acco-title {
