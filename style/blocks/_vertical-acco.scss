@@ -18,10 +18,14 @@ font-weight: 700;
 text-transform: uppercase;
 line-height: 1;
 
+@include phones {
+    font-size: 40px;
+}
 }
 
 
 .acco-list { 
+    position: relative;
     display: flex;
     height: 100%;
     justify-content: flex-end;
@@ -35,14 +39,25 @@ display: flex;
 width: 100px;
 z-index: 2;
 transition: all .5s;
+
+@include phones {
+    width: 80px;
+}
 }
 
 .acco-item_active {
     width: 58%;   
 
     @include tablets {
-        width: 100%;
+        width: calc(100% - 200px);
     }
+
+    @include phones {
+       
+        width: calc(100% - 160px);
+
+    }
+   
 }
 
 
@@ -57,7 +72,11 @@ background-image: url(./../backgrounds/vert-menu__bgc-item1.png);
 background-size: cover;
 padding-bottom: 70px;
 
+@include phones {
+    width: 80px;
 }
+}
+
 
 .second-title-wrapper {
 background-color: black;
@@ -81,6 +100,10 @@ background-size: cover;
     transform: rotate(-90deg);
     white-space: nowrap;
     width: 100%;
+
+    @include phones {
+        font-size: 36px;
+    }
  }
 
 
@@ -88,7 +111,7 @@ background-size: cover;
 
 overflow: hidden;
 
- }
+}
 
 
 
@@ -106,12 +129,25 @@ overflow: hidden;
     font-weight: 400;
     line-height: 23.97px;
 
-    
+    @include tablets {
+        padding: 66px 66px 0 27px;
+    }
+
+    @include phones {
+        padding: 64px 20px 0 20px;
+    }
 }
+
+    
 
 .acco-desc {
     opacity: 0;
-}
+
+    @include phones {
+       font-size: 16px;
+    }
+}  
+   
 
 .acco-item_active .acco-desc {
     opacity: 1;

@@ -46,7 +46,7 @@ const closeAcco = (list) => {
 $(".acco-item").on("click", (e) => {
   e.preventDefault();
 
-  console.log(e.target); 
+  
   
 
   if ($(e.target).hasClass("acco-title-wrapper") || $(e.target).hasClass("acco-title")) {
