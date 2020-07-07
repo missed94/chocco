@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  overflow: hidden;
+ /*  overflow: hidden; */
   height: 100%;
   width: 100%;
   line-height: 1;
@@ -42,7 +42,7 @@ body {
   height: 100%;
   position: relative;
   transform: translateY(0vh);
-  transition: transform 1s;
+  transition: transform 1.2s;
   
 }
 
