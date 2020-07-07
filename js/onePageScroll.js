@@ -45,7 +45,7 @@ $('body').on('wheel', function(event) {
 });
 */
 
-let moove = 0;
+/* let moove = 0;
 const mainContent = $(".main__contant");
 let pages = $(".page");
 let scroll = false;
@@ -71,3 +71,4 @@ $("body").on("wheel", () => {
   let translate = -moove + "vh";
   mainContent.css("transform", "translateY(" + translate + ")");
 });
+ */
