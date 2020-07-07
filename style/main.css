@@ -2005,7 +2005,7 @@ textarea {
 
 .team-section {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 .team-section:before {
   content: "";
@@ -2312,6 +2312,8 @@ textarea {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   /*  position: absolute;
    right: 0;
    top: 0; */
@@ -2342,8 +2344,22 @@ textarea {
 }
 @media screen and (max-width: 480px) {
   .acco-item_active {
-    width: calc(100% - 160px);
+    /* 
+     width: calc(100% - 160px); */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
   }
+}
+
+.acco-item_phones {
+  /* display: none; */
+  position: absolute;
+  right: -106%;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
 }
 
 .acco-title-wrapper {

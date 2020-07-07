@@ -34,6 +34,7 @@ if (itemContainer.hasClass("acco-item_active")) {
 
 const openAcco = (item) => {
   item.addClass("acco-item_active");
+  
 };
 
 const closeAcco = (list) => {
