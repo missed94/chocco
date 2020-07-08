@@ -1,4 +1,4 @@
-$(document).ready(function() 
+/* $(document).ready(function() 
 {
   var moove = 0;
   const mainContent = $(".main__contant");
@@ -41,6 +41,9 @@ $(document).ready(function()
     let translate = (-moove * 100) + "vh";
     mainContent.css("transform", "translateY(" + translate + ")");
 
-    setTimeout(function() { scroll = false; }, 1500);
+    setTimeout(function() { 
+      scroll = false; 
+    }, 1700);
   });
 });
+ */

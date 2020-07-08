@@ -997,20 +997,56 @@
 
         <section class="section player-section page">
           <div class="container">
-            <h2 class="section__title">
+            <h2 class="section__title player-section__title">
               КАК МЫ РАБОТАЕМ
             </h2>
             <div class="player-section__container">
               <div class="player">
                 <div class="player-wrapper">
-                  <div class="player-elem">
-
+                  <video controls src="./videos/THE SEED -- Inspirational Short Film.mp4"  id="" class="player-elem" type="video/mp4">
+                  </video>
+                  <div class="player-splash">
+                    <div class="big-play__wrapper">
+                      <img src="./icons/Play_white_video.png" alt="">
+                    </div>
                   </div>
-                  <div class="player-splash"></div>
 
                 </div>
                 <div class="player-controls">
-                  
+                  <div class="play-stop">
+                    <div class="play">
+                      <svg class="play-icon">
+                        <use xlink:href="#play"></use>
+                      </svg>
+                    </div>
+                    <div class="pause">
+                      <svg class="pause-icon">
+                        <use xlink:href="#phone"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="player__playback">
+                    <button class="slider__btn playback__btn"></button>
+                    <div class="playback__slider-line slider-line"></div>
+                  </div>
+
+                  <div class="player__volume">
+                    <div class="volume__icon-wrapper">
+                      <svg class="volume-icon">
+                        <use xlink:href="#volume"></use>
+                      </svg>
+                    </div>
+                    <div class="silence__icon-wrapper">
+                      <svg class="silence-icon">
+                        <use xlink:href="#close"></use>
+                      </svg>
+                    </div>
+                    <div class="volume__slider-line slider-line">
+                      <button class="slider__btn volume__slider-btn">
+                      </button>
+
+                    </div>
+                  </div>
                 </div>
               </div>
 
