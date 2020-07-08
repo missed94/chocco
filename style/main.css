@@ -2361,10 +2361,10 @@ textarea {
 }
 @media screen and (max-width: 480px) {
   .acco-item_active {
-    width: calc(100% - 160px);
-    /* position: absolute; */
-    /* height: 100%; */
-    /* width: 100%; */
+    /* width: calc(100% - 160px);  */
+    position: absolute;
+    height: 100%;
+    width: 100%;
     z-index: 3;
   }
 }
@@ -2510,5 +2510,5 @@ textarea {
   right: 0;
   height: 0;
   bottom: 0; */
-  background: url(./../backgrounds/splash-video.png) center center/cover no-repeat;
+  background: url(./../backgrounds/splash-video.png) black center center/cover no-repeat;
 }
