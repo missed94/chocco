@@ -54,8 +54,8 @@ transition: all .5s;
     }
 
     @include phones {
-       /* 
-        width: calc(100% - 160px); */
+        
+        /* width: calc(100% - 160px);  */
 position: absolute;
 height: 100%;
 width: 100%;

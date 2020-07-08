@@ -11,7 +11,7 @@ html {
 }
 
 body {
- /*  overflow: hidden; */
+  overflow: hidden;
   height: 100%;
   width: 100%;
   line-height: 1;
@@ -23,11 +23,11 @@ body {
 
 .wrapper {
   min-height: 100%;
-  /* display: flex;
-  flex-direction: column; */
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
   min-width: 0;
- /*  flex: 1 0 auto; */
+  flex: 1 0 auto;
 }
 
 .container {
