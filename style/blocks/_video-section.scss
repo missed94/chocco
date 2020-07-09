@@ -164,6 +164,9 @@ transform: translate(-50%,-50%);
   right: 0;
   left: 38%;
 }
+.volume__slider-btn {
+  left: 100%;
+}
 
 .player__sound-off .volume__slider-btn {
   left: 0;
@@ -180,6 +183,7 @@ transform: translate(-50%,-50%);
 
 .player__sound-off .silence__icon-wrapper {
   display: block;
+  cursor: pointer;
 }
 
 .silence-icon {
