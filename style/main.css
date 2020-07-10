@@ -1733,12 +1733,20 @@ textarea {
     background: url(./../backgrounds/video-section-bgc.png) center center/contain no-repeat;
     transform: translateX(25%);
     z-index: 4; }
+    @media screen and (max-width: 768px) {
+      .player-section:after {
+        width: 28%;
+        bottom: -16%; } }
     @media screen and (max-width: 480px) {
       .player-section:after {
-        width: 28%; } }
+        width: 28%;
+        bottom: -17%; } }
 
 .player-section__title {
   margin-bottom: 40px; }
+  @media screen and (max-width: 480px) {
+    .player-section__title {
+      font-size: 40px; } }
 
 .this-section__container:before {
   content: "";
@@ -1755,9 +1763,9 @@ textarea {
       left: 10px; } }
   @media screen and (max-width: 480px) {
     .this-section__container:before {
-      width: 6%;
-      bottom: 40px;
-      left: 10px; } }
+      width: 8%;
+      bottom: -73px;
+      left: 24px; } }
 .this-section__container:after {
   content: "";
   position: absolute;
@@ -1770,7 +1778,12 @@ textarea {
     .this-section__container:after {
       right: 42px;
       top: 41px;
-      width: 8%; } }
+      width: 10%; } }
+  @media screen and (max-width: 480px) {
+    .this-section__container:after {
+      right: 26px;
+      top: 35px;
+      width: 10%; } }
 
 .player-section__container {
   width: 70%;
