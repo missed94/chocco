@@ -996,12 +996,12 @@
         </section>
 
         <section class="section player-section page">
-          <div class="container">
+          <div class="container this-section__container">
             <h2 class="section__title player-section__title">
               КАК МЫ РАБОТАЕМ
             </h2>
             <div class="player-section__container">
-              <div class="player player_active">
+              <div class="player">
                 <div class="player-wrapper">
                   <video  src="./videos/THE SEED -- Inspirational Short Film.mp4"  id="" class="player-elem" type="video/mp4">
                   </video>
@@ -1031,16 +1031,20 @@
                   </div>
 
                   <div class="player__volume">
-                    <div class="volume__icon-wrapper">
-                      <svg class="volume-icon">
-                        <use xlink:href="#volume"></use>
-                      </svg>
+                    <div class="volume__icons-wrapper">
+                      <div class="volume-icon">
+                        <svg class="volume">
+                          <use xlink:href="#volume"></use>
+                        </svg>
+                      </div>
+                      <div class="silence__icon">
+                        <svg class="silence">
+                          <use xlink:href="#close"></use>
+                        </svg>
+                      </div>
+
                     </div>
-                    <div class="silence__icon-wrapper">
-                      <svg class="silence-icon">
-                        <use xlink:href="#close"></use>
-                      </svg>
-                    </div>
+                    
                     <div class="volume__slider-line slider-line">
                       <button class="slider__btn volume__slider-btn">
                       </button>
