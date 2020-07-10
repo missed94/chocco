@@ -13,15 +13,25 @@
     transform: translateX(25%);
     z-index: 4;
 
+    @include tablets {
+      width: 28%;
+      bottom: -16%;
+    }
+
 
     @include phones {
       width: 28%;
+      bottom: -17%;
     }
   }
 }
 
 .player-section__title {
   margin-bottom: 40px;
+
+  @include phones{
+    font-size: 40px;
+  }
 }
 
 .this-section__container {
@@ -41,9 +51,9 @@
     }
 
     @include phones{
-      width: 6%;
-      bottom: 40px;
-      left: 10px; 
+      width: 8%;
+    bottom: -73px;
+    left: 24px; 
     }
   }
 
@@ -60,8 +70,14 @@
     @include tablets {
       right: 42px;
       top: 41px;
-      width: 8%;
+      width: 10%;
     }
+    @include phones {
+      right: 26px;
+      top: 35px;
+      width: 10%;
+    }
+   
   }
 
 
