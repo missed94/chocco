@@ -1,49 +1,109 @@
-/* $(document).ready(function() 
-{
-  var moove = 0;
-  const mainContent = $(".main__contant");
-  var pages = $(".page");
-  var scroll = false;
+const sections = $("section");
+const display = $(".main__content");
+const sideMenu = $(".fixed-menu");
+const sideMenuItems = sideMenu.find(".fixed-menu__item");
 
-  //Автоматический скролл в начало после обновления страницы
-  $(window).on("load", function() {
-    $(window).scrollTop($(".page:first-child").offset().top);
+let inScroll = false;
+
+sections.first().addClass("active");
+
+const countSectionPosition = (sectionEq) => {
+  const position = sectionEq * -100;
+
+  if (isNaN(position)) {
+    console.error("передано неверное значение в countSectionPosition");
+    return 0;
+  }
+
+  return position;
+};
+
+const resetActiveClassForItem = (items, itemEq, activeClass) => {
+  items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
+};
+
+//функция запускающая анимацию
+const performTransition = (sectionEq) => {
+  if (inScroll) return;
+
+  inScroll = true;
+  const position = countSectionPosition(sectionEq);
+
+  display.css({
+    transform: `translateY(${position}%)`,
   });
-  $(window).on("scroll", function() {
-    $(window).scrollTop($(".page:first-child").offset().top);
-  });
-  
-  //Инициализация активной страницы (первой по умолчанию)
-  $(".page:first-child").addClass("page_active");
 
-  //Событие скролла колесиком
-  $('body').on('wheel', function(event) 
-  {
-    let activePage = pages.filter(".page_active");
+  resetActiveClassForItem(sections, sectionEq, "active");
 
-    if (!scroll) 
-    {
-      scroll = true;
-      if (event.originalEvent.deltaY > 0)
-      {
-        if (activePage.next().length)
-              moove++;
+  setTimeout(() => {
+    inScroll = false;
+    resetActiveClassForItem(
+      sideMenuItems,
+      sectionEq,
+      "fixed-menu__item_active"
+    );
+  }, 1500);
+};
+
+// функция определяюзаяя к какой секции скролить
+const viewportScroller = () => {
+  const activeSection = sections.filter(".active");
+  const nextSection = activeSection.next();
+  const prevSection = activeSection.prev();
+
+  return {
+    next() {
+      if (nextSection.length) {
+        performTransition(nextSection.index());
       }
-      else
-      {
-          if (activePage.prev().length)
-              moove--;
+    },
+
+    prev() {
+      if (prevSection.length) {
+        performTransition(prevSection.index());
       }
-    }
+    },
+  };
+};
 
-    pages.eq(moove).addClass('page_active').siblings().removeClass('page_active');
+$(window).on("wheel", (e) => {
+  const deltaY = e.originalEvent.deltaY;
+  const scroller = viewportScroller();
+  if (deltaY > 0) {
+    scroller.next();
+  }
 
-    let translate = (-moove * 100) + "vh";
-    mainContent.css("transform", "translateY(" + translate + ")");
-
-    setTimeout(function() { 
-      scroll = false; 
-    }, 1700);
-  });
+  if (deltaY < 0) {
+    scroller.prev();
+  }
 });
- */
+
+$(window).on("keydown", (e) => {
+  const tagName = e.target.tagName.toLowerCase();
+  const userTypingInInputs = tagName == "input" || tagName == "textarea";
+  const scroller = viewportScroller();
+
+  if (userTypingInInputs) return;
+
+  switch (e.keyCode) {
+    case 40: //prev
+      scroller.next();
+      break;
+
+    case 38: //next
+      scroller.prev();
+      break;
+  }
+});
+
+$("[data-scroll-to]").click((e) => {
+  e.preventDefault();
+
+  const $this = $(e.currentTarget);
+  const target = $this.attr("data-scroll-to");
+  const reqSection = $(`[data-section-id = ${target}]`);
+
+  performTransition(reqSection.index());
+
+  console.log(reqSection.index());
+});

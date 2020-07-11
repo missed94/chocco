@@ -90,7 +90,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* overflow: hidden; */
+  overflow: hidden;
   min-width: 0;
   flex: 1 0 auto; }
 
@@ -100,12 +100,13 @@ body {
   margin: 0 auto;
   position: relative; }
 
-.main__contant {
+.main__content {
   width: 100%;
   height: 100%;
   position: relative;
   transform: translateY(0vh);
-  transition: transform 1.2s; }
+  transition: transform 1.2s;
+  will-change: transform; }
 
 textarea {
   resize: none; }

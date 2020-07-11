@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="main__contant">
-        <section class="welcome page">
+      <div class="main__content">
+        <section  data-section-id="welcome" class="welcome page">
           <div class="container welcome__container">
             <header class="welcome__header">
               <div class="welcome__header-logo">
@@ -23,25 +23,25 @@
 
               <ul class="menu">
                 <li class="menu-item">
-                  <a href="#">О нас</a>
+                  <a data-scroll-to="benefits" href="#">О нас</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Батончики</a>
+                  <a data-scroll-to="composition" href="#">Батончики</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Команда</a>
+                  <a data-scroll-to="team" href="#">Команда</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Меню</a>
+                  <a data-scroll-to="vertical-menu" href="#">Меню</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Отзывы</a>
+                  <a data-scroll-to="reviews" href="#">Отзывы</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Как мы работаем</a>
+                  <a data-scroll-to="player" href="#">Как мы работаем</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#">Контакты</a>
+                  <a data-scroll-to="map" href="#">Контакты</a>
                 </li>
               </ul>
 
@@ -81,7 +81,7 @@
                 здоровьем
               </p>
 
-              <a href="#" class="btn welcome__hero-btn">ЗАКАЗАТЬ</a>
+              <a data-scroll-to="delivery" href="#" class="btn welcome__hero-btn">ЗАКАЗАТЬ</a>
             </div>
 
             <!-- <div class="welcome__hero-img">
@@ -126,7 +126,7 @@
           </div>
         </section>
 
-        <section class="section benefit-section page">
+        <section data-section-id="benefits" class="section benefit-section page">
           <div class="container">
             <div class="headline">
               <h1 class="section__title headline__title">почему chocco?</h1>
@@ -207,7 +207,7 @@
           </div>
         </section>
 
-        <section class="section composition page">
+        <section data-section-id="composition" class="section composition page">
           <div class="container composition-container">
             <div class="slider">
              
@@ -339,7 +339,7 @@
                       <p class="price">
                         140 ₽
                       </p>
-                      <a class="btn slider-btn">
+                      <a data-scroll-to="delivery" href="#" class="btn slider-btn">
                         Заказать
                       </a>
                     </div>
@@ -630,7 +630,7 @@
           </div>
         </section>
 
-        <section class="section team-section page">
+        <section data-section-id="team" class="section team-section page">
           <div class="container team-container">
             <h1 class="section__title team__title">
               КОМАНДА
@@ -824,7 +824,7 @@
           </div>
         </section>
 
-      <section class="vertical-menu__section page">
+      <section data-section-id="vertical-menu" class="vertical-menu__section page">
         <h1 class="vertical-menu__title">МЕНЮ</h1>
         <ul class="acco-list">
           <li class="acco-item"> <!-- acco-item_active -->
@@ -888,7 +888,7 @@
       </section>
 
 
-        <section class="section rewievs-section page">
+        <section data-section-id="reviews" class="section rewievs-section page">
           <div class="container">
             <h2 class="section__title rewievs__main-title">Отзывы</h2>
 
@@ -995,7 +995,7 @@
           </div>
         </section>
 
-        <section class="section player-section page">
+        <section data-section-id="player" class="section player-section page">
           <div class="container this-section__container">
             <h2 class="section__title player-section__title">
               КАК МЫ РАБОТАЕМ
@@ -1059,7 +1059,7 @@
           </div>
         </section>
 
-        <section class="section delivery-section page">
+        <section data-section-id="delivery" class="section delivery-section page">
           <div class="container">
             <h1 class="section__title delivery__title">
               Закажите доставку
@@ -1155,7 +1155,7 @@
           </div>
         </section>
 
-        <section class="map-section page">
+        <section data-section-id="map" class="map-section page">
           <div id="map" class="map"></div>
           
 
@@ -1224,31 +1224,31 @@
 
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
-        <li class="fixed-menu__item fixed-menu__item_active">
+        <li data-scroll-to="welcome" class="fixed-menu__item fixed-menu__item_active">
           <a href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="benefits" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="composition" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="team" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="vertical-menu" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="reviews" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="player" href="" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a data-scroll-to="delivery" href="" class="fixed-menu__link"></a>
         </li>
-        <li class="fixed-menu__item">
+        <li data-scroll-to="map" class="fixed-menu__item">
           <a href="" class="fixed-menu__link"></a>
         </li>
       </ul>
