@@ -894,7 +894,7 @@
 
             <div class="rewievs">
               <ul class="rewievs__display">
-                <div class="rewievs__display-inner rewievs__display-inner_active">
+                <div data-to="1" class="rewievs__display-inner rewievs__display-inner_active">
                   <div class="rewievs__avatar">
                     <img
                       src="./reviews/photo1.jpg"
@@ -919,7 +919,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="rewievs__display-inner ">
+                <div data-to="2" class="rewievs__display-inner ">
                   <div class="rewievs__avatar">
                     <img
                       src="./reviews/photo3.jpg"
@@ -940,7 +940,7 @@
                     </div>
                   </article>
                 </div>
-                <div class="rewievs__display-inner">
+                <div data-to="3" class="rewievs__display-inner">
                   <div class="rewievs__avatar">
                     <img
                       src="./reviews/photo2.jpg"
@@ -964,9 +964,8 @@
               </ul>
 
               <ul class="reviews__switcher">
-                <li
-                  class="rewievs__switcher-item interactive-avatar interactive-avatar_active"
-                >
+                <li data-from="1" class="rewievs__switcher-item interactive-avatar interactive-avatar_active"
+               >
                   <a href="" class="interactive-avatar-link"
                     ><img
                       src="./reviews/photo1.jpg"
@@ -974,7 +973,7 @@
                       class="interactive-avatar-img"
                   /></a>
                 </li>
-                <li class="rewievs__switcher-item interactive-avatar">
+                <li data-from="2" class="rewievs__switcher-item interactive-avatar">
                   <a href="" class="interactive-avatar-link"
                     ><img
                       src="./reviews/photo3.jpg"
@@ -982,7 +981,7 @@
                       class="interactive-avatar-img"
                   /></a>
                 </li>
-                <li class="rewievs__switcher-item interactive-avatar">
+                <li data-from="1" class="rewievs__switcher-item interactive-avatar">
                   <a href="" class="interactive-avatar-link"
                     ><img
                       src="./reviews/photo2.jpg"
@@ -1592,10 +1591,14 @@
     <script src="./js/carousel.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/vertical-acco.js"></script>
+    
+    <script src="./jquery/touchSwipe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
     <script src="./js/onePageScroll.js"></script>
     <script src="./js/video.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
-    <script src="js/map.js"></script>
+    <script src="./js/map.js"></script>
+    
   </body>
 </html>

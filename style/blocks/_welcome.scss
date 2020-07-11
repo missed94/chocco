@@ -1,5 +1,5 @@
 .welcome {
-  height: 100vh;
+  height: 100%;
   /* min-height: rem(960px) */;
   background: url(./../images/uzor.png) right bottom no-repeat #86c3d7;
   position: relative;
@@ -40,9 +40,6 @@
       #86c3d7;
   }
 
-  @include se {
-    min-height: rem(800px);
-  }
 }
 
 .welcome__container {

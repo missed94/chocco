@@ -1,10 +1,38 @@
 //объявляем переменные:
 
 //переменная с круглыми аватарками
-const avatars = document.querySelectorAll('.interactive-avatar');
 
-//переменная с блоками дисплей
-const displayInner = document.querySelectorAll('.rewievs__display-inner');
+
+const avatars = $('.interactive-avatar');
+
+const displayInner = $('.rewievs__display-inner');
+
+
+/* const avatars = $('[data-from]');
+
+const displayInner = $('[data-to]');
+
+
+
+avatars.on('click', e => {
+    e.preventDefault();
+    const $this = $(e.currentTarget);
+
+    const displayInnerData = displayInner
+
+    avatars.removeClass('interactive-avatar_active');
+
+
+    if ($this.hasClass('interactive-avatar')) {
+        $this.addClass('interactive-avatar_active')
+    }
+
+
+
+})  */
+
+
+
 
 
 //объявляем цикл который перебирает все круглые аватарки
