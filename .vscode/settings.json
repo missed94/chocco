@@ -1,3 +1,4 @@
 {
-    "px-to-rem.px-per-rem": 10
+    "px-to-rem.px-per-rem": 10,
+    "terminal.integrated.automationShell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
 }

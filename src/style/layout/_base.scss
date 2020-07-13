@@ -33,7 +33,7 @@ body {
 
 .container {
   width: 94%;
-  max-width: 940px;
+  max-width: rem(940px);
   margin: 0 auto;
   position: relative;
 }

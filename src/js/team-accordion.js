@@ -1,3 +1,4 @@
+;(function() {
 const openItem = function (item) {
   const container = item.closest(".teammate-item");
   const contentBlock = container.find(".position-wrapper");
@@ -94,3 +95,7 @@ for (let i = 0; i < items.length; i++) {
   })
 
 } */
+
+})()
+
+
