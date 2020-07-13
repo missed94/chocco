@@ -1,5 +1,5 @@
 //вызов gulp
-const { src, dest, task, series, watch } = require("gulp");
+const { src, dest, task, series, watch, parallel } = require("gulp");
 //вызов плагина удаления
 const rm = require("gulp-rm");
 //вызов плагина компилятора препроцессора sass
@@ -27,6 +27,9 @@ const sourcemaps = require("gulp-sourcemaps");
 const babel = require("gulp-babel");
 //min js
 const uglify = require("gulp-uglify");
+//svg sprite
+const svgo = require("gulp-svgo");
+const svgSprite = require("gulp-svg-sprite");
 
 //таск удаления
 task("clean", () => {
@@ -39,6 +42,38 @@ task("copy:html", () => {
     .pipe(dest("dist"))
     .pipe(reload({ stream: true }));
 });
+
+
+
+task("copy:fonts", () => {
+  return src("src/**/*.ttf")
+    .pipe(dest("dist"))
+    .pipe(reload({ stream: true }))
+});
+
+const images = [
+"src/**/*.png",
+"src/**/*.jpg",
+"src/**/*.svg",
+"src/**/*.webp"
+];
+
+task("copy:img", () => {
+  return src(images)
+    .pipe(dest("dist"))
+    .pipe(reload({ stream: true }))
+});
+
+
+
+task("copy:video", () => {
+  return src("src/**/*.mp4")
+    .pipe(dest("dist"))
+    .pipe(reload({ stream: true }))
+});
+
+
+
 
 //массив для склейки файлов стилей
 const styles = [
@@ -98,11 +133,22 @@ task("scripts", () => {
     .pipe(reload({ stream: true }));
 });
 
+
+
 //слежка за изменениями стилей
 watch("src/style/**/*.scss", series("styles"));
 //слежка за изменениями html
 watch("src/*.html", series("copy:html"));
 //слежка за изменениями js
 watch("src/js/*.js", series("scripts"));
+
+
+watch("src/**/*.ttf", series("copy:fonts"));
+
+watch(images, series("copy:img"));
+
+watch("src/**/*.mp4", series("copy:video"));
 //таск запускающийся по-умолчанию
-task("default", series("clean", "copy:html", "styles", "scripts", "server"));
+task("default", series("clean", parallel("copy:img","copy:video","copy:html","copy:fonts", "styles", "scripts"), "server"));
+
+
