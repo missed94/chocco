@@ -50,7 +50,7 @@ transition: all .5s;
     width: 58%;   
 
     @include tablets {
-        width: calc(100% - rem(200px));
+        width: calc(100% - 11.11112rem);
     }
 
     @include phones {
@@ -63,6 +63,8 @@ z-index: 3;
 }
    
 }
+
+
 
 
 

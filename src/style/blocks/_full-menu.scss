@@ -31,6 +31,7 @@
 .full-menu-list {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
   margin: 0;
   padding: 0;
@@ -53,6 +54,7 @@
   a {
     font-size: rem(36px);
     font-weight: 400;
+    color: white;
 
   }
 

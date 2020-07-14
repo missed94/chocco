@@ -14,5 +14,9 @@
   }
 }
 
-@import "./layout/*.scss";
+
+
+@import "./layout/_fonts.scss";
+@import "./layout/_normalize.scss";
+@import "./layout/_base.scss";
 @import "./blocks/*.scss";
