@@ -117,7 +117,7 @@ task("server", function () {
   });
 });
 
-const libs = [/* "node_modules/jquery/dist/jquery.js", */ `${SRC_PATH}/js/*.js`];
+const libs = [/* "node_modules/jquery/dist/jquery.js",  */`${SRC_PATH}/js/*.js`];
 
 task("scripts", () => {
   return src(libs)

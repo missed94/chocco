@@ -55,13 +55,33 @@ transition: all .5s;
 
     @include phones {
         
-        /* width: calc(100% - rem(160px));  */
-position: absolute;
+       /* width: calc(100% - rem(160px));  */
+/* position: absolute;
 height: 100%;
 width: 100%;
-z-index: 3;
+z-index: 3;  */
 }
    
+}
+
+
+.added-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    display: flex;
+    z-index: 2;
+    right: -100%;
+    transition: all 0.5s;
+}
+
+.added-item_active {
+    right: 0;
 }
 
 
@@ -162,14 +182,26 @@ overflow: hidden;
 
     @include phones {
        font-size: rem(16px);
+       
     }
 }  
-   
 
 .acco-item_active .acco-desc {
     opacity: 1;
     transition: opacity .3s .5s;
 }
+
+   
+.added-item_active .acco-desc {
+    opacity: 1;
+    transition: opacity .3s .5s;
+}
+/* .acco-item_active .acco-desc {
+    opacity: 1;
+    transition: opacity .3s .5s;
+}
+ */
+
 
 .close-wrapper {
     position: absolute;

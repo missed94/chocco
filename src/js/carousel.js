@@ -1,10 +1,3 @@
-/* 
-const arrowLeft = $(".slider__arrow-left-wrapper");
-const arrowRight = $(".slider_arrow-right-wrapper");
-const carouselContent = $(".slider-content-list"); */
-
-/* let moove = 0; */
-
 (function() {
   function carousel(arrowRight, arrowLeft, moove, carouselContent) {
 
@@ -88,5 +81,3 @@ const carouselContent = $(".slider-content-list"); */
   
   carousel(arrowLeft, arrowRight, carouselContent, 0, ) */
 })()
-
- 
