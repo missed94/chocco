@@ -4,7 +4,7 @@
 
   &:after {
     content: "";
-    background: url(./../images/composition_back-img.png) right center/contain no-repeat;
+    background: url(./images/composition_back-img.png) right center/contain no-repeat;
     width: 20%;
     height: rem(453px);
     right: 0;
@@ -13,7 +13,7 @@
     
 
     @include tablets {
-      background: url(./../images/composition-back-image-tablets.png) right center / contain no-repeat;
+      background: url(./images/composition-back-image-tablets.png) right center / contain no-repeat;
       width: 25%;
       height: rem(362px);
       bottom:rem(-150px);
@@ -23,7 +23,7 @@
     }
   
     @include phones {
-      background: url(./../images/composition-back-image-phones.png) right center / contain no-repeat;
+      background: url(./images/composition-back-image-phones.png) right center / contain no-repeat;
       width: 30%;
       height: rem(362px);
       bottom:rem(-170px);

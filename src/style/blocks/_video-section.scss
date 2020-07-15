@@ -9,7 +9,7 @@
     bottom: -12%;
   
     position: absolute;
-    background: url(./../backgrounds/video-section-bgc.png) center center/contain no-repeat;
+    background: url(./backgrounds/video-section-bgc.png) center center/contain no-repeat;
     transform: translateX(25%);
     z-index: 4;
 
@@ -42,7 +42,7 @@
     bottom: rem(-50px);
     width: 10%;
     height: rem(135px);
-    background: url(./../backgrounds/videosection-list1.png) center center/contain no-repeat;
+    background: url(./backgrounds/videosection-list1.png) center center/contain no-repeat;
 
     @include tablets {
       width: 6%;
@@ -64,7 +64,7 @@
     top: 0;
     width: 10%;
     height: rem(77px);
-    background: url(./../backgrounds/videosection-list2.png) center center/contain no-repeat;
+    background: url(./backgrounds/videosection-list2.png) center center/contain no-repeat;
 
 
     @include tablets {
@@ -118,7 +118,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: url(./../backgrounds/splash-video.png) black center center/cover
+  background: url(./backgrounds/splash-video.png) black center center/cover
     no-repeat;
 }
 

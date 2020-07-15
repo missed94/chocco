@@ -20,7 +20,7 @@
   position: relative;
   padding: rem(50px) rem(43px) rem(37px);
   margin-bottom: rem(19px);
-  background: url(./../images/rewievs_display-bg.png) #f8faf9 right top
+  background: url(./images/rewievs_display-bg.png) #f8faf9 right top
     no-repeat;
   overflow: hidden;
 
@@ -43,7 +43,7 @@
   }
 
   @include phones {
-    background: url(./../images/rewievs_display-bg.png) #f8faf9 right top / 25%
+    background: url(./images/rewievs_display-bg.png) #f8faf9 right top / 25%
     no-repeat;
   }
 }

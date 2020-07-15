@@ -1,9 +1,9 @@
 .benefit-section {
   position: relative;
-  background: url(./../images/uzor_list.png) left top 57% no-repeat;
+  background: url(./images/uzor_list.png) left top 57% no-repeat;
 
   &:before {
-    content: url(./../images/choko_malina.png);
+    content: url(./images/choko_malina.png);
     position: absolute;
     left: 0;
     bottom: rem(-114px);

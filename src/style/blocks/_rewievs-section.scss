@@ -9,7 +9,7 @@
     position: absolute;
     left: 0;
     bottom: rem(-160px);
-    background: url(./../images/rewievs__list-berries.png) left center/contain no-repeat;
+    background: url(./images/rewievs__list-berries.png) left center/contain no-repeat;
     z-index: 2;
 
 
@@ -28,7 +28,7 @@
 
   &:after {
     content: ""/* url(./../images/rewievs_stawberry.png) */;
-    background:url(./../images/rewievs_stawberry.png) right top/contain no-repeat;
+    background:url(./images/rewievs_stawberry.png) right top/contain no-repeat;
     width: rem(150px);
     height: rem(86px);
     position: absolute;

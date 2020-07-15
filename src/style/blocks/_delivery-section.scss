@@ -1,10 +1,10 @@
 .delivery-section {
-  background: url(./../backgrounds/delivery-bgc.jpg) no-repeat;
+  background: url(./backgrounds/delivery-bgc.jpg) no-repeat;
   background-size: cover;
   position: relative;
 
   &:before {
-    content: url(./../images/form_list.png);
+    content: url(./images/form_list.png);
     right: 0;
     bottom: rem(81px);
     position: absolute;
@@ -15,7 +15,7 @@
   }
 
   &:after {
-    content: url(./../images/form_berry.png);
+    content: url(./images/form_berry.png);
     left: rem(20px);
     bottom: rem(83px);
     position: absolute;

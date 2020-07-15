@@ -40,7 +40,6 @@ if (itemContainer.hasClass("acco-item_active")) {
 
 
   const maxWidth = document.body.clientWidth;
-  console.log(maxWidth);
 
   
   const openAcco = (item) => {
@@ -58,14 +57,12 @@ if (itemContainer.hasClass("acco-item_active")) {
 
   $(window).on('resize', function(e) {
     currWidth = document.body.clientWidth;
-    console.log(currWidth);
   })
   
   
   
   $(".acco-item").on("click", (e) => {
     e.preventDefault();
-    console.log(currWidth);
     
     if (currWidth > 480) {
       
@@ -105,7 +102,6 @@ if (itemContainer.hasClass("acco-item_active")) {
             const $target = $(e.target)
             if ($target.hasClass('close-x') || $target.hasClass('acco-title-wrapper') || $target.hasClass('acco-title')) {
 
-              console.log(e.target);
               itemToAdd.removeClass("added-item_active")
               setTimeout(() => {
                 itemToAdd.remove()
