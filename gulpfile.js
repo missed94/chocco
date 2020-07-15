@@ -30,76 +30,80 @@ const uglify = require("gulp-uglify");
 //svg sprite
 const svgo = require("gulp-svgo");
 const svgSprite = require("gulp-svg-sprite");
+// prod vs dev
+const gulpif = require("gulp-if");
+
+const env = process.env.NODE_ENV;
+
+// config
+const { SRC_PATH, DIST_PATH, STYLE_LIBS, JS_LIBS } = require("./gulp.config");
 
 //таск удаления
 task("clean", () => {
-  return src("dist/**/*", { read: false }).pipe(rm());
+  return src(`${DIST_PATH}/**/*`, { read: false }).pipe(rm());
 });
 
 //таск копирования
 task("copy:html", () => {
-  return src("src/*.html")
-    .pipe(dest("dist"))
+  return src(`${SRC_PATH}/*.html`)
+    .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));
 });
 
-
-
 task("copy:fonts", () => {
-  return src("src/**/*.ttf")
-    .pipe(dest("dist"))
-    .pipe(reload({ stream: true }))
+  return src(`${SRC_PATH}/**/*.ttf`)
+    .pipe(dest(DIST_PATH))
+    .pipe(reload({ stream: true }));
 });
 
 const images = [
-"src/**/*.png",
-"src/**/*.jpg",
-"src/**/*.svg",
-"src/**/*.webp"
+  `${SRC_PATH}/**/*.png`,
+  `${SRC_PATH}/**/*.jpg`,
+  `${SRC_PATH}/**/*.svg`,
+  `${SRC_PATH}/**/*.webp`,
 ];
 
 task("copy:img", () => {
   return src(images)
-    .pipe(dest("dist"))
-    .pipe(reload({ stream: true }))
+    .pipe(dest(DIST_PATH))
+    .pipe(reload({ stream: true }));
 });
-
-
 
 task("copy:video", () => {
-  return src("src/**/*.mp4")
-    .pipe(dest("dist"))
-    .pipe(reload({ stream: true }))
+  return src(`${SRC_PATH}/**/*.mp4`)
+    .pipe(dest(DIST_PATH))
+    .pipe(reload({ stream: true }));
 });
-
-
-
 
 //массив для склейки файлов стилей
 const styles = [
   /* "node_modules/" */
-  "src/style/main.scss"
+  `${SRC_PATH}/style/main.scss`,
 ];
 
 //таск компиляции из scss в css
 task("styles", () => {
   return (
     src(styles)
-      .pipe(sourcemaps.init())
+      .pipe(gulpif(env == "dev", sourcemaps.init()))
       .pipe(concat("main.min.scss"))
       .pipe(sassGlob())
       .pipe(sass().on("error", sass.logError))
       /* .pipe(px2rem()) */
       .pipe(
-        autoprefixer({
-          overrideBrowserslist: ["last 2 versions"],
-          cascade: false,
-        })
+        gulpif(
+          env == "dev",
+          autoprefixer({
+            overrideBrowserslist: ["last 2 versions"],
+            cascade: false,
+          })
+        )
       )
-      .pipe(gcmq())
-      .pipe(cleanCSS())
-      .pipe(sourcemaps.write())
-      .pipe(dest("dist"))
+      .pipe(gulpif(env == "prod", gcmq()))
+
+      .pipe(gulpif(env == "prod", cleanCSS()))
+      .pipe(gulpif(env == "dev", sourcemaps.write()))
+      .pipe(dest(DIST_PATH))
       .pipe(reload({ stream: true }))
   );
 });
@@ -108,47 +112,52 @@ task("styles", () => {
 task("server", function () {
   browserSync.init({
     server: {
-      baseDir: "./dist",
+      baseDir: `./${DIST_PATH}`,
     },
   });
 });
 
-const libs = [
-  "node_modules/jquery/dist/jquery.js",
-  "src/js/*.js"
-]
+const libs = [/* "node_modules/jquery/dist/jquery.js",  */`${SRC_PATH}/js/*.js`];
 
 task("scripts", () => {
   return src(libs)
-    .pipe(sourcemaps.init())
+    .pipe(gulpif(env == "dev", sourcemaps.init()))
     .pipe(concat("main.min.js"))
-    .pipe(
-      babel({
-        presets: ["@babel/env"],
-      })
-    )
-    .pipe(uglify())
-    .pipe(sourcemaps.write())
-    .pipe(dest("dist"))
+    .pipe(gulpif(env == "prod", babel({ presets: ["@babel/env"] })))
+    .pipe(gulpif(env == "prod", uglify()))
+    .pipe(gulpif(env == "dev", sourcemaps.write()))
+    .pipe(dest(DIST_PATH))
     .pipe(reload({ stream: true }));
 });
 
 
-
+task("watch", () => {
 //слежка за изменениями стилей
-watch("src/style/**/*.scss", series("styles"));
+watch(`${SRC_PATH}/style/**/*.scss`, series("styles"));
 //слежка за изменениями html
-watch("src/*.html", series("copy:html"));
+watch(`${SRC_PATH}/*.html`, series("copy:html"));
 //слежка за изменениями js
-watch("src/js/*.js", series("scripts"));
+watch(`${SRC_PATH}/js/*.js`, series("scripts"));
 
-
-watch("src/**/*.ttf", series("copy:fonts"));
+watch(`${SRC_PATH}/**/*.ttf`, series("copy:fonts"));
 
 watch(images, series("copy:img"));
 
-watch("src/**/*.mp4", series("copy:video"));
+watch(`${SRC_PATH}/**/*.mp4`, series("copy:video"));
+});
+
+
+
+
+
 //таск запускающийся по-умолчанию
-task("default", series("clean", parallel("copy:img","copy:video","copy:html","copy:fonts", "styles", "scripts"), "server"));
+task("default",series("clean",
+parallel("copy:img","copy:video","copy:html","copy:fonts","styles","scripts"),
+parallel('watch',"server"))
+);
 
 
+task ("build",
+series("clean",
+parallel("copy:img","copy:video","copy:html","copy:fonts","styles","scripts"))
+)
