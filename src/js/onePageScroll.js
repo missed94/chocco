@@ -139,13 +139,14 @@
         let scrollDirection = "";
         if (direction == "up") {
           scrollDirection = "next";
+          scroller[scrollDirection]();
         }
 
         if (direction == "down") {
           scrollDirection = "prev";
+          scroller[scrollDirection]();
         }
 
-        scroller[scrollDirection]();
       },
     });
   }

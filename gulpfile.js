@@ -117,10 +117,11 @@ task("server", function () {
   });
 });
 
-const libs = [/* "node_modules/jquery/dist/jquery.js",  */`${SRC_PATH}/js/*.js`];
-
 task("scripts", () => {
-  return src(libs)
+  return src([
+    ...JS_LIBS,
+    `${SRC_PATH}/js/*.js`
+  ])
     .pipe(gulpif(env == "dev", sourcemaps.init()))
     .pipe(concat("main.min.js"))
     .pipe(gulpif(env == "prod", babel({ presets: ["@babel/env"] })))
@@ -130,34 +131,49 @@ task("scripts", () => {
     .pipe(reload({ stream: true }));
 });
 
-
 task("watch", () => {
-//слежка за изменениями стилей
-watch(`${SRC_PATH}/style/**/*.scss`, series("styles"));
-//слежка за изменениями html
-watch(`${SRC_PATH}/*.html`, series("copy:html"));
-//слежка за изменениями js
-watch(`${SRC_PATH}/js/*.js`, series("scripts"));
+  //слежка за изменениями стилей
+  watch(`${SRC_PATH}/style/**/*.scss`, series("styles"));
+  //слежка за изменениями html
+  watch(`${SRC_PATH}/*.html`, series("copy:html"));
+  //слежка за изменениями js
+  watch(`${SRC_PATH}/js/*.js`, series("scripts"));
 
-watch(`${SRC_PATH}/**/*.ttf`, series("copy:fonts"));
+  watch(`${SRC_PATH}/**/*.ttf`, series("copy:fonts"));
 
-watch(images, series("copy:img"));
+  watch(images, series("copy:img"));
 
-watch(`${SRC_PATH}/**/*.mp4`, series("copy:video"));
+  watch(`${SRC_PATH}/**/*.mp4`, series("copy:video"));
 });
 
-
-
-
-
 //таск запускающийся по-умолчанию
-task("default",series("clean",
-parallel("copy:img","copy:video","copy:html","copy:fonts","styles","scripts"),
-parallel('watch',"server"))
+task(
+  "default",
+  series(
+    "clean",
+    parallel(
+      "copy:img",
+      "copy:video",
+      "copy:html",
+      "copy:fonts",
+      "styles",
+      "scripts"
+    ),
+    parallel("watch", "server")
+  )
 );
 
-
-task ("build",
-series("clean",
-parallel("copy:img","copy:video","copy:html","copy:fonts","styles","scripts"))
-)
+task(
+  "build",
+  series(
+    "clean",
+    parallel(
+      "copy:img",
+      "copy:video",
+      "copy:html",
+      "copy:fonts",
+      "styles",
+      "scripts"
+    )
+  )
+);
