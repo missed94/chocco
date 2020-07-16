@@ -175,6 +175,7 @@
   height: rem(22px);
   cursor: pointer;
   margin-right: rem(10px);
+  display: flex;
 
   @include tablets {
     width: rem(14px);
@@ -189,6 +190,7 @@
 
 .player_paused .play {
   display: none;
+  display: flex;
 }
 
 .play-icon {
@@ -330,6 +332,7 @@
 .volume-icon {
   width: rem(18px);
   height: rem(22px);
+  display: flex;
 
   @include tablets {
     width: rem(16px);
