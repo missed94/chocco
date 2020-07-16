@@ -1,200 +1,175 @@
 .vertical-menu__section {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
   background-color: black;
-  background-image: url(./backgrounds/vertical-acco-bcgrnd.png);  
+  background-image: url(./backgrounds/vertical-acco-bcgrnd.png);
   background-size: cover;
-
 }
 
+.vertical-menu__title {
+  position: absolute;
+  top: 9%;
+  left: 7%;
+  color: #ffffff;
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
 
-.vertical-menu__title { 
-    position: absolute;
-    top: 9%;
-    left: 7%;
-color: #ffffff;
-font-size: rem(48px);
-font-weight: 700;
-text-transform: uppercase;
-line-height: 1;
-
-@include phones {
+  @include phones {
     font-size: rem(40px);
-}
+  }
 }
 
-
-.acco-list { 
-    position: relative;
-    display: flex;
-    height: 100%;
-    justify-content: flex-end;
-    transition: all .5s;
-   /*  position: absolute;
+.acco-list {
+  position: relative;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  transition: all 0.5s;
+  /*  position: absolute;
     right: 0;
     top: 0; */
-
 }
-.acco-item { 
-display: flex;
-width: rem(100px);
-z-index: 2;
-transition: all .5s;
+.acco-item {
+  display: flex;
+  width: rem(100px);
+  z-index: 2;
+  transition: all 0.5s;
 
-@include phones {
+  @include phones {
     width: rem(80px);
-}
+  }
 }
 
 .acco-item_active {
-    width: 58%;   
+  width: 58%;
 
-    @include tablets {
-        width: calc(100% - 11.11112rem);
-    }
+  @include tablets {
+    width: calc(100% - 11.11112rem);
+  }
 
-    @include phones {
-        
-       /* width: calc(100% - rem(160px));  */
-/* position: absolute;
+  @include phones {
+    /* width: calc(100% - rem(160px));  */
+    /* position: absolute;
 height: 100%;
 width: 100%;
 z-index: 3;  */
+  }
 }
-   
-}
-
 
 .added-item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    /* left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* left: 0;
     right: 0;
     top: 0;
     bottom: 0; */
-    display: flex;
-    z-index: 2;
-    right: -100%;
-    transition: all 0.5s;
+  display: flex;
+  z-index: 2;
+  right: -100%;
+  transition: all 0.5s;
 }
 
 .added-item_active {
-    right: 0;
+  right: 0;
 }
-
-
-
-
 
 .acco-item_phones {
-/* display: none; */
-position: absolute;
-right: -106%;
-top: 0;
-bottom: 0;
-width: 100%;
+  /* display: none; */
+  position: absolute;
+  right: -106%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
+.acco-title-wrapper {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: rem(100px);
+  background-color: black;
+  background-image: url(./backgrounds/vert-menu__bgc-item1.png);
+  background-size: cover;
+  padding-bottom: rem(70px);
 
-.acco-title-wrapper { 
-    cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: flex-end;
-width: rem(100px);
-background-color: black;
-background-image: url(./backgrounds/vert-menu__bgc-item1.png);
-background-size: cover;
-padding-bottom: rem(70px);
-
-@include phones {
+  @include phones {
     width: rem(80px);
+  }
 }
-}
-
 
 .second-title-wrapper {
-background-color: black;
-background-image: url(./backgrounds/vert-menu__bgc-item2.png);
-background-size: cover;
-
+  background-color: black;
+  background-image: url(./backgrounds/vert-menu__bgc-item2.png);
+  background-size: cover;
 }
 
-
 .third-title-wrapper {
-    background-color: black;
-    background-image: url(./backgrounds/vert-menu__bgc-item3.png);
-    background-size: cover;  
+  background-color: black;
+  background-image: url(./backgrounds/vert-menu__bgc-item3.png);
+  background-size: cover;
 }
 
 .acco-title {
-    color: #ffffff;
-    font-size: rem(48px);
-    font-weight: 700;
-    line-height: 1;
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    width: 100%;
+  color: #ffffff;
+  font-size: rem(48px);
+  font-weight: 700;
+  line-height: 1;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 100%;
 
-    @include phones {
-        font-size: rem(36px);
-    }
- }
-
-
- .acco-content-wrap {
-
-overflow: hidden;
-
+  @include phones {
+    font-size: rem(36px);
+  }
 }
 
-
+.acco-content-wrap {
+  overflow: hidden;
+}
 
 .acco-content {
-    position: relative;
-    overflow: hidden; 
-    height: 100%;
-    background-color: #333537;
-    opacity: 0.93;
-    padding: rem(50px) rem(126px) 0 rem(27px);
-    
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-color: #333537;
+  opacity: 0.93;
+  padding: rem(50px) rem(126px) 0 rem(27px);
 
-    color: #ffffff;
-    font-size: rem(16px);
-    font-weight: 400;
-    line-height: rem(23.97px);
+  color: #ffffff;
+  font-size: rem(16px);
+  font-weight: 400;
+  line-height: rem(23.97px);
 
-    @include tablets {
-        padding: rem(66px) rem(66px) 0 rem(27px);
-    }
+  @include tablets {
+    padding: rem(66px) rem(66px) 0 rem(27px);
+  }
 
-    @include phones {
-        padding: rem(64px) rem(20px) 0 rem(20px);
-    }
+  @include phones {
+    padding: rem(64px) rem(20px) 0 rem(20px);
+  }
 }
-
-    
 
 .acco-desc {
-    opacity: 0;
+  opacity: 0;
 
-    @include phones {
-       font-size: rem(16px);
-       
-    }
-}  
-
-.acco-item_active .acco-desc {
-    opacity: 1;
-    transition: opacity .3s .5s;
+  @include phones {
+    font-size: rem(16px);
+  }
 }
 
-   
+.acco-item_active .acco-desc {
+  opacity: 1;
+  transition: opacity 0.3s 0.5s;
+}
+
 .added-item_active .acco-desc {
-    opacity: 1;
-    transition: opacity .3s .5s;
+  opacity: 1;
+  transition: opacity 0.3s 0.5s;
 }
 /* .acco-item_active .acco-desc {
     opacity: 1;
@@ -202,19 +177,15 @@ overflow: hidden;
 }
  */
 
-
 .close-wrapper {
-    position: absolute;
-    width: rem(18px);
-    height: rem(18px);
-    right:rem(32px);
-    top: rem(26px);
+  position: absolute;
+  width: rem(18px);
+  height: rem(18px);
+  right: rem(32px);
+  top: rem(26px);
 }
 
-
 .close-vert-menu {
-
-width: rem(18px);
-height: rem(18px);
-
+  width: rem(18px);
+  height: rem(18px);
 }

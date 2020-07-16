@@ -1,8 +1,6 @@
 .rewievs__main-title {
   margin-bottom: rem(33px);
   font-size: rem(48px);
-  
-  
 
   @include phones {
     font-size: rem(40px);
@@ -10,18 +8,15 @@
 }
 
 .rewievs {
-
   flex-direction: column;
   display: flex;
 }
 
 .rewievs__display {
-  
   position: relative;
   padding: rem(50px) rem(43px) rem(37px);
   margin-bottom: rem(19px);
-  background: url(./images/rewievs_display-bg.png) #f8faf9 right top
-    no-repeat;
+  background: url(./images/rewievs_display-bg.png) #f8faf9 right top no-repeat;
   overflow: hidden;
 
   &:after {
@@ -44,31 +39,26 @@
 
   @include phones {
     background: url(./images/rewievs_display-bg.png) #f8faf9 right top / 25%
-    no-repeat;
+      no-repeat;
   }
 }
 
 .rewievs__display-inner {
-/* position: absolute; */
   display: none;
   top: 0;
-  
-  
-  
+  opacity: 0;
 
-  @include tablets{
+  @include tablets {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
   }
 }
 
 .rewievs__display-inner_active {
-
+  opacity: 1;
   display: flex;
- 
-  
+  transition: opacity 0.3s 0.5s;
 }
 
 .rewievs__avatar {
@@ -76,19 +66,16 @@
   height: rem(260px);
   margin-right: rem(20px);
 
-  @include tablets{
+  @include tablets {
     width: rem(131px);
     height: rem(131px);
     margin-right: 0;
-
   }
 
-  @include phones  {
+  @include phones {
     width: rem(122px);
     height: rem(122px);
   }
-
-
 }
 
 .rewievs__avatar-img {

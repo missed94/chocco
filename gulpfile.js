@@ -33,6 +33,7 @@ const svgSprite = require("gulp-svg-sprite");
 // prod vs dev
 const gulpif = require("gulp-if");
 
+//переменная определяющая версию сборки (dev или prod)
 const env = process.env.NODE_ENV;
 
 // config
@@ -118,10 +119,7 @@ task("server", function () {
 });
 
 task("scripts", () => {
-  return src([
-    ...JS_LIBS,
-    `${SRC_PATH}/js/*.js`
-  ])
+  return src([...JS_LIBS, `${SRC_PATH}/js/*.js`])
     .pipe(gulpif(env == "dev", sourcemaps.init()))
     .pipe(concat("main.min.js"))
     .pipe(gulpif(env == "prod", babel({ presets: ["@babel/env"] })))
@@ -138,11 +136,11 @@ task("watch", () => {
   watch(`${SRC_PATH}/*.html`, series("copy:html"));
   //слежка за изменениями js
   watch(`${SRC_PATH}/js/*.js`, series("scripts"));
-
+  //слежка за изменениями шрифтов
   watch(`${SRC_PATH}/**/*.ttf`, series("copy:fonts"));
-
+  //слежка за изменениями всех картинок
   watch(images, series("copy:img"));
-
+  //слежка за изменениями видео
   watch(`${SRC_PATH}/**/*.mp4`, series("copy:video"));
 });
 
