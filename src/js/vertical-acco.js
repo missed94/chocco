@@ -1,38 +1,5 @@
-/* const openAcco = (item) => {
 
-item.addClass("acco-item_active");
-
-}
-
-
-
-const closeAcco = (list) => {
-
-  const listItem = list.find(".acco-item"); 
-  listItem.removeClass("acco-item_active");
-
-  }
-
-
-$(".acco-title-wrapper").on('click', (e) => {
-    e.preventDefault();
-    const $this = $(e.currentTarget);
-    const itemContainer = $this.closest(".acco-item");
-    const accoList = itemContainer.closest(".acco-list");
-    
-if (itemContainer.hasClass("acco-item_active")) {
-    closeAcco(accoList);
-
-
-
-} else {
-    closeAcco(accoList);
-    openAcco(itemContainer);
-
-    }
-}) */
-
-(function () {
+;(function () {
   const maxWidth = document.body.clientWidth;
 
   const openAcco = (item) => {

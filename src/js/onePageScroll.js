@@ -1,4 +1,4 @@
-(function () {
+;(function () {
   const sections = $("section");
   const display = $(".main__content");
   const sideMenu = $(".fixed-menu");
@@ -114,6 +114,24 @@
     performTransition(reqSection.index());
   });
 
+  /* if (isMobile) {
+    $("body").swipe( {
+      //Generic swipe handler for all directions
+      swipe:function(event,direction) {
+        
+       const scroller = viewportScroller(); 
+       let scrollDirection = "";
+       
+    
+       if (direction == "up") scrollDirection = "next";
+       if (direction == "down") scrollDirection = "prev";
+    
+       scroller[scrollDirection]();
+    }
+    })
+  
+  }
+   */
   if (isMobile) {
     $("body").swipe({
       swipe: function (event, direction) {
@@ -128,6 +146,7 @@
           scrollDirection = "prev";
           scroller[scrollDirection]();
         }
+
       },
     });
   }
