@@ -1,0 +1,23 @@
+.welcome__header-telephone {
+  &:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @include tablets {
+    display: none;
+  }
+
+  @include phones {
+    display: none;
+  }
+}
+
+.welcome__header-number-icon {
+  fill: #ffffff;
+  white-space: nowrap;
+}
+
+.welcome__header-telephone-number {
+  color: #ffffff;
+  white-space: nowrap;
+}

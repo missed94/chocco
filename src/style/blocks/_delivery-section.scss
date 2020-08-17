@@ -1,0 +1,41 @@
+.delivery-section {
+  background: url(./backgrounds/delivery-bgc.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: url(./images/form_list.png);
+    right: 0;
+    bottom: rem(81px);
+    position: absolute;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: url(./images/form_berry.png);
+    left: rem(20px);
+    bottom: rem(83px);
+    position: absolute;
+
+    @include tablets {
+      display: none;
+    }
+  }
+}
+
+.delivery__title {
+  color: #365a49;
+  font-size: rem(48px);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: rem(37px);
+
+
+  @include tablets {
+    font-size: rem(40px);
+  }
+}

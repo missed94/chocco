@@ -1,0 +1,16 @@
+.slider-btn {
+  cursor: pointer;
+  background-color: #365a49;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #2e4e3f;
+  }
+
+  @include phones {
+   padding:19px 38px;
+  }
+}

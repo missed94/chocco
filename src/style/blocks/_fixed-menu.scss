@@ -1,0 +1,41 @@
+.fixed-menu {
+  position: fixed;
+  top: 33%;
+  right: 4%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+
+  &_active {
+    .fixed-menu__link {
+      border-color: white;
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+  
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+}

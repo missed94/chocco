@@ -1,0 +1,85 @@
+.radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  margin-right: rem(23px);
+
+  @include tablets {
+    margin-bottom: 10px;
+   }
+  
+  @include phones {
+    margin-bottom: 10px;
+   }
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+ 
+  &__checkbox {
+    .radio__visible {
+      border-radius: 0;
+
+      &:before {
+        background: url(./icons/gala.png) center center no-repeat;
+      }
+
+      
+    }
+
+    @include tablets {
+      margin-bottom: 0;
+     }
+    
+    @include phones {
+      margin-bottom: 0;
+     }
+
+    
+  }
+  
+}
+
+.radio__title {
+  font-size: rem(18px);
+  color: #365a49;
+}
+
+.radio__elem {
+  display: none;
+
+  &:checked ~ .radio__visible {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+.radio__visible {
+  width: rem(26px);
+  height: rem(26px);
+  position: relative;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: rem(10px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:before {
+    content: "";
+    display: none;
+    width: rem(13px);
+    height: rem(13px);
+    background-color: #365a49;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+  font-size: 18px;
+
+  @include tablets {
+    font-size: 17px;
+  }
+
+  @include phones {
+    font-size: 4vmin;
+  }
+}
+
+body {
+  
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-family: "AlegreyaSans";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ overflow: hidden;
+  min-width: 0;
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 94%;
+  max-width: rem(940px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.main__content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateY(0vh);
+  transition: transform 1.2s;
+  will-change: transform;
+  
+}
+
+textarea {
+  resize: none;
+}
+
+.page {
+  position: relative;
+  height: 100%;
+}

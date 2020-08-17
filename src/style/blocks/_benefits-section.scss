@@ -1,0 +1,25 @@
+.benefit-section {
+  position: relative;
+  background: url(./images/uzor_list.png) left top 57% no-repeat;
+
+  &:before {
+    content: url(./images/choko_malina.png);
+    position: absolute;
+    left: 0;
+    bottom: rem(-114px);
+    z-index: 10;
+
+    @include phones {
+      display: none;
+    }
+
+  }
+
+  @include tablets {
+    background-position: left top 12%;
+  }
+
+  @include phones {
+    background: none;
+  }
+}

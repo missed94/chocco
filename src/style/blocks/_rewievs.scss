@@ -1,0 +1,121 @@
+.rewievs__main-title {
+  margin-bottom: rem(33px);
+  font-size: rem(48px);
+
+  @include phones {
+    font-size: rem(40px);
+  }
+}
+
+.rewievs {
+  flex-direction: column;
+  display: flex;
+}
+
+.rewievs__display {
+  position: relative;
+  padding: rem(50px) rem(43px) rem(37px);
+  margin-bottom: rem(19px);
+  background: url(./images/rewievs_display-bg.png) #f8faf9 right top no-repeat;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    display: block;
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    z-index: 1;
+  }
+
+  @include tablets {
+    padding: rem(50px) rem(21px);
+  }
+
+  @include phones {
+    background: url(./images/rewievs_display-bg.png) #f8faf9 right top / 25%
+      no-repeat;
+  }
+}
+
+.rewievs__display-inner {
+  display: none;
+  top: 0;
+  opacity: 0;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.rewievs__display-inner_active {
+  opacity: 1;
+  display: flex;
+  transition: opacity 0.3s 0.5s;
+}
+
+.rewievs__avatar {
+  width: rem(254px);
+  height: rem(260px);
+  margin-right: rem(20px);
+
+  @include tablets {
+    width: rem(131px);
+    height: rem(131px);
+    margin-right: 0;
+  }
+
+  @include phones {
+    width: rem(122px);
+    height: rem(122px);
+  }
+}
+
+.rewievs__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.rewievs__content {
+  flex: 1;
+  padding-top: rem(17px);
+}
+
+.rewievs__title {
+  color: #000000;
+  font-size: rem(30px);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: rem(25px);
+}
+.rewiev__text {
+  color: #666666;
+  font-size: rem(18px);
+  font-weight: 400;
+  line-height: rem(23px);
+  margin-bottom: rem(26px);
+  padding-right: rem(80px);
+
+  @include tablets {
+    padding: 0;
+  }
+
+  @include phones {
+    padding: 0;
+  }
+}
+
+.rewiev-name {
+  color: #000000;
+  font-size: rem(18px);
+  font-weight: 500;
+  line-height: 1;
+}

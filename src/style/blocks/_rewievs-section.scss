@@ -1,0 +1,52 @@
+.rewievs-section {
+  position: relative;
+  /* background: url(./../../images/uzor_list.png) left top 57% no-repeat; */
+
+  &:before {
+    content:"" /* url(./../images/rewievs__list-berries.png) */;
+    width: rem(139px);
+    height: rem(321px);
+    position: absolute;
+    left: 0;
+    bottom: rem(-160px);
+    background: url(./images/rewievs__list-berries.png) left center/contain no-repeat;
+    z-index: 2;
+
+
+    @include tablets {
+      width: 20%;
+
+    }
+
+    @include phones {
+      /* content: url(./../images/rewievs__list-berries-tablets.png); 
+      bottom: rem(-200px); */
+      width: 20%;
+      
+    } 
+  }
+
+  &:after {
+    content: ""/* url(./../images/rewievs_stawberry.png) */;
+    background:url(./images/rewievs_stawberry.png) right top/contain no-repeat;
+    width: rem(150px);
+    height: rem(86px);
+    position: absolute;
+    top: 3.3%;
+    right: 1.2%;
+
+    @include tablets {
+      /* content: url(./../images/strawberry_tablets.png); 
+      right: 0;
+      top: 1%; */
+    }
+
+    @include phones {
+      width: 25%;
+      /* content: url(./../images/strawberry_tablets.png); 
+      right: 0;
+      top: 1%; */
+    }
+
+  }
+}
